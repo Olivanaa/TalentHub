@@ -6,10 +6,10 @@ import TrainingCard from "./TrainingCard";
 import { X, MapPin, Briefcase, Award, Globe, BookOpen } from "lucide-react";
 
 export default function ProfileModal({
-    profile,
-    onClose = () => { },
-    isOpen = false,
-    showCloseButton = true
+    showCloseButton = true,
+    isOpen = { isModalOpen },
+    profile = { selectedProfile },
+    onClose = { handleCloseModal }
 }) {
     if (!profile || !isOpen) return null
 

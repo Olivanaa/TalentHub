@@ -2,7 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom"
 import { getLoggedUser, logout } from "../services/Auth"
 import { Search, MoonStar, X, Menu } from "lucide-react"
 import SearchBar from "./SearchBar"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Navbar() {
 
@@ -24,8 +24,9 @@ export default function Navbar() {
         setIsMobileMenuOpen(!isMobileMenuOpen)
     }
 
+
     return (
-        <nav className="bg-white/80 backdrop-blur-md shadow-sm px-6 py-4 border-b border-gray-200">
+        <nav className="bg-white/80 backdrop-blur-md shadow-sm px-6 py-4 border-b border-gray-200 relative z-40">
             <div className="flex justify-between items-center h-14">
                 <Link to="/"
                     className="font-logo text-[#f83f32] font-bold text-2xl tracking-wide hover:scale-105 transition-transform duration-300">

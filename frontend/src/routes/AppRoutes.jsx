@@ -5,7 +5,6 @@ import Login from "../pages/Login";
 import PageNotFound from "../pages/PageNotFound";
 import Profiles from "../pages/Profiles";
 import SearchPage from "../pages/SearchPage";
-import SearchResult from "../pages/SearchResult";
 import PrivateRoute from "../services/Auth";
 
 
@@ -28,13 +27,9 @@ export const router = createBrowserRouter([
                 element: <PrivateRoute><Profiles /></PrivateRoute>
             },
             {
-                path:"search",
+                path:"search/:searchProfile",
                 element:<PrivateRoute><SearchPage /></PrivateRoute>
-            },
-            {
-                path:"search:/search",
-                element:<PrivateRoute><SearchResult /></PrivateRoute>
-            },
+            }
             
         ]
     }
