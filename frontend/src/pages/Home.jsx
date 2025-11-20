@@ -2,7 +2,7 @@ import hero_image from '../assets/hero_img.png';
 
 export default function Home() {
     return (
-        <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#F2F6FF] to-[#E8EEFF] px-6 py-12">
+        <section className="min-h-screen flex items-center justify-center bg-linear-to-br from-[#F2F6FF] to-[#E8EEFF] px-6 py-12">
             <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                 <div className="space-y-6 lg:space-y-10 px-4 lg:px-0">
@@ -33,7 +33,7 @@ export default function Home() {
                 <div className="flex justify-center lg:justify-end">
                     <img
                         src={hero_image}
-                        alt="Hero Image"
+                        alt="Hero"
                         className="w-full max-w-[650px] lg:max-w-[900px] drop-shadow-2xl"
                     />
                 </div>
