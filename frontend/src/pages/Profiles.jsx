@@ -4,7 +4,7 @@ import { useState } from "react"
 import ProfileModal from "../components/ProfileModal"
 import ProfileCard from "../components/ProfileCard"
 import Erro from "./Erro"
-import { Users } from "lucide-react"
+import { ArrowUpDown, SortAsc, SortDesc, Users } from "lucide-react"
 
 export default function Profiles() {
 
@@ -13,7 +13,9 @@ export default function Profiles() {
     const [selectedProfile, setSelectedProfile] = useState(null)
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [erro, setErro] = useState(null)
-    
+    const [sortOrder, setSortOrder] = useState('id')
+    const [filteredProfiles, setFilteredProfiles] = useState([])
+
 
     const API_URL = import.meta.env.VITE_API_URL
 
@@ -36,6 +38,27 @@ export default function Profiles() {
         setLoading(true)
         fetchProfiles()
     }, [])
+
+    const sortProfiles = (profilesToSort, order) => {
+        const sorted = [...profilesToSort]
+
+        switch (order) {
+            case 'name-asc':
+                return sorted.sort((a, b) => a.nome.localeCompare(b.nome))
+            case 'name-desc':
+                return sorted.sort((a, b) => b.nome.localeCompare(a.nome))
+            case 'id':
+            default:
+                return sorted.sort((a, b) => a.id - b.id)
+        }
+    }
+
+    useEffect(() => {
+        if (profiles.length > 0) {
+            const sorted = sortProfiles(profiles, sortOrder)
+            setFilteredProfiles(sorted)
+        }
+    }, [sortOrder, profiles])
 
     if (loading) {
         return (
@@ -87,17 +110,57 @@ export default function Profiles() {
                             Descubra profissionais incríveis e conecte-se com os melhores talentos do mercado
                         </p>
                     </div>
+
+                    <div className="mt-8 flex justify-center">
+                        <div className="bg-white rounded-lg border border-gray-200 p-2 shadow-sm">
+                            <div className="flex items-center gap-2 text-sm">
+                                <ArrowUpDown size={16} className="text-gray-500" />
+                                <span className="text-gray-600 font-medium">Ordenar por:</span>
+                                <button
+                                    onClick={() => setSortOrder('id')}
+                                    className={`px-3 py-1 rounded transition-all duration-200 ${sortOrder === 'id'
+                                            ? 'bg-[#f83f32] text-white'
+                                            : 'text-gray-600 hover:bg-gray-100'
+                                        }`}
+                                >
+                                    ID
+                                </button>
+                                <button
+                                    onClick={() => setSortOrder('name-asc')}
+                                    className={`px-3 py-1 rounded transition-all duration-200 flex items-center gap-1 ${sortOrder === 'name-asc'
+                                            ? 'bg-[#f83f32] text-white'
+                                            : 'text-gray-600 hover:bg-gray-100'
+                                        }`}
+                                >
+                                    <SortAsc size={14} />
+                                    A-Z
+                                </button>
+                                <button
+                                    onClick={() => setSortOrder('name-desc')}
+                                    className={`px-3 py-1 rounded transition-all duration-200 flex items-center gap-1 ${sortOrder === 'name-desc'
+                                            ? 'bg-[#f83f32] text-white'
+                                            : 'text-gray-600 hover:bg-gray-100'
+                                        }`}
+                                >
+                                    <SortDesc size={14} />
+                                    Z-A
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="mt-6 text-center">
                         <p className="text-sm text-[#64748B]">
-                            {profiles.length} {profiles.length === 1 ? 'perfil disponível' : 'perfis disponíveis'}
+                            {filteredProfiles.length} {filteredProfiles.length === 1 ? 'perfil disponível' : 'perfis disponíveis'}
                         </p>
                     </div>
                 </div>
             </div>
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                {profiles.length > 0 ? (
+                {filteredProfiles.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                        {profiles.map((profile) => (
+                        {filteredProfiles.map((profile) => (
                             <ProfileCard
                                 key={profile.id}
                                 {...profile}
@@ -120,6 +183,7 @@ export default function Profiles() {
                     </div>
                 )}
             </div>
+
             <ProfileModal
                 isOpen={isModalOpen}
                 profile={selectedProfile}
@@ -128,7 +192,6 @@ export default function Profiles() {
                     setSelectedProfile(null)
                 }}
             />
-
         </main>
     )
 }
