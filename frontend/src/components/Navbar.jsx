@@ -3,8 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { getLoggedUser, logout } from "../services/Auth";
 import useTheme from "../hooks/useTheme";
 
-import NavbarDesktop from "./navbar/NavbarDesktop";
-import NavbarMobile from "./navbar/NavbarMobile";
+import NavbarDesktop from "./NavbarDesktop";
+import NavbarMobile from "./NavbarMobile";
 
 export default function Navbar() {
     const usuario = getLoggedUser();

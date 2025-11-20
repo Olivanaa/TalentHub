@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Menu, X, Search } from "lucide-react";
-import SearchBar from "../SearchBar";
+import SearchBar from "./SearchBar";
 import ThemeToggle from "./ThemeToggle";
 
 export default function NavbarMobile({
