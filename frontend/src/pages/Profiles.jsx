@@ -30,7 +30,7 @@ export default function Profiles() {
     }
 
     useEffect(() => {
-        setLoading(true)
+        setLoading(false)
         fetchProfiles()
     }, [])
 
@@ -77,7 +77,7 @@ export default function Profiles() {
     }
 
     if (erro)
-        return <Erro message={erro} onRetry={fetchProfiles} />
+        return <Erro onRetry={fetchProfiles} />
 
     return (
         <main className="bg-gradient-to-br from-gray-200 to-gray-100 dark:from-[#0f0f0f] dark:to-[#1c1c1c] transition-colors duration-300 min-h-screen">
