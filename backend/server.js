@@ -14,6 +14,15 @@ app.use(express.json());
 const PORT = process.env.PORT || 5000;
 const SECRET_KEY = process.env.SECRET_KEY;
 
+app.use(cors({
+    origin: [
+        "http://localhost:5173",
+        "https://talent-hub-mu.vercel.app",
+        process.env.FRONTEND_URL
+    ].filter(Boolean),
+    credentials: true
+}))
+
 app.use((req, res, next) => {
     console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
     next();
