@@ -4,10 +4,13 @@ import ProfileCard from "../components/ProfileCard"
 import { Search, Users, ArrowLeft } from "lucide-react"
 import ProfileModal from "../components/ProfileModal"
 import Erro from "./Erro"
+import { useFilters } from "../hooks/useFilters"
+import FilterComponent from "../components/FilterComponent"
 
 export default function SearchPage() {
   const { searchProfile } = useParams()
   const navigate = useNavigate()
+  const { areas, cidades, habilidades } = useFilters()
 
   const [profiles, setProfiles] = useState([])
   const [filteredProfiles, setFilteredProfiles] = useState([])
@@ -15,8 +18,85 @@ export default function SearchPage() {
   const [error, setError] = useState(null)
   const [selectedProfile, setSelectedProfile] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [activeFilters, setActiveFilters] = useState({
+    area: "",
+    cidade: "",
+    tecnologia: ""
+  })
 
   const API_URL = import.meta.env.VITE_API_URL
+
+  const applySearch = (data, searchTerm) => {
+    if (!searchTerm) return data
+
+    const term = searchTerm.toLowerCase()
+    return data.filter(profile => {
+      const mainFields =
+        profile.nome?.toLowerCase().includes(term) ||
+        profile.cargo?.toLowerCase().includes(term) ||
+        profile.area?.toLowerCase().includes(term) ||
+        profile.localizacao?.toLowerCase().includes(term) ||
+        profile.resumo?.toLowerCase().includes(term)
+
+      const techSkills = profile.habilidadesTecnicas?.some(skill =>
+        skill.toLowerCase().includes(term)
+      )
+
+      const softSkills = profile.softSkills?.some(skill =>
+        skill.toLowerCase().includes(term)
+      )
+
+      const experiences = profile.experiencias?.some(exp =>
+        exp.empresa?.toLowerCase().includes(term) ||
+        exp.cargo?.toLowerCase().includes(term) ||
+        exp.descricao?.toLowerCase().includes(term)
+      )
+
+      const education = profile.formacao?.some(edu =>
+        edu.curso?.toLowerCase().includes(term) ||
+        edu.instituicao?.toLowerCase().includes(term)
+      )
+
+      const projects = profile.projetos?.some(proj =>
+        proj.titulo?.toLowerCase().includes(term) ||
+        proj.descricao?.toLowerCase().includes(term)
+      )
+
+      const certifications = profile.certificacoes?.some(cert =>
+        cert.toLowerCase().includes(term)
+      )
+
+      const languages = profile.idiomas?.some(lang =>
+        lang.idioma?.toLowerCase().includes(term) ||
+        lang.nivel?.toLowerCase().includes(term)
+      )
+
+      const interests = profile.areaInteresses?.some(interest =>
+        interest.toLowerCase().includes(term)
+      )
+
+      return mainFields || techSkills || softSkills || experiences ||
+        education || projects || certifications || languages || interests
+    })
+  }
+
+  const applyFilters = (data, filters) => {
+    return data.filter(profile => {
+      const areaMatch = !filters.area ||
+        (profile.area && profile.area.toLowerCase().includes(filters.area.toLowerCase()))
+
+      const cidadeMatch = !filters.cidade ||
+        (profile.localizacao && profile.localizacao.toLowerCase().includes(filters.cidade.toLowerCase()))
+
+      const tecnologiaMatch = !filters.tecnologia ||
+        (profile.habilidadesTecnicas &&
+          profile.habilidadesTecnicas.some(skill =>
+            skill.toLowerCase().includes(filters.tecnologia.toLowerCase())
+          ))
+
+      return areaMatch && cidadeMatch && tecnologiaMatch
+    })
+  }
 
   async function fetchProfiles() {
     setError(null)
@@ -25,57 +105,9 @@ export default function SearchPage() {
       const data = await res.json()
       setProfiles(data)
 
-      if (searchProfile) {
-        const searchTerm = searchProfile.toLowerCase()
-        const filtered = data.filter(profile => {
-          const mainFields =
-            profile.nome?.toLowerCase().includes(searchTerm) ||
-            profile.cargo?.toLowerCase().includes(searchTerm) ||
-            profile.area?.toLowerCase().includes(searchTerm) ||
-            profile.localizacao?.toLowerCase().includes(searchTerm) ||
-            profile.resumo?.toLowerCase().includes(searchTerm)
-          const techSkills = profile.habilidadesTecnicas?.some(skill =>
-            skill.toLowerCase().includes(searchTerm)
-          )
-
-          const softSkills = profile.softSkills?.some(skill =>
-            skill.toLowerCase().includes(searchTerm)
-          )
-
-          const experiences = profile.experiencias?.some(exp =>
-            exp.empresa?.toLowerCase().includes(searchTerm) ||
-            exp.cargo?.toLowerCase().includes(searchTerm) ||
-            exp.descricao?.toLowerCase().includes(searchTerm)
-          )
-
-          const education = profile.formacao?.some(edu =>
-            edu.curso?.toLowerCase().includes(searchTerm) ||
-            edu.instituicao?.toLowerCase().includes(searchTerm)
-          )
-          const projects = profile.projetos?.some(proj =>
-            proj.titulo?.toLowerCase().includes(searchTerm) ||
-            proj.descricao?.toLowerCase().includes(searchTerm)
-          )
-          const certifications = profile.certificacoes?.some(cert =>
-            cert.toLowerCase().includes(searchTerm)
-          )
-
-          const languages = profile.idiomas?.some(lang =>
-            lang.idioma?.toLowerCase().includes(searchTerm) ||
-            lang.nivel?.toLowerCase().includes(searchTerm)
-          )
-
-          const interests = profile.areaInteresses?.some(interest =>
-            interest.toLowerCase().includes(searchTerm)
-          )
-
-          return mainFields || techSkills || softSkills || experiences ||
-            education || projects || certifications || languages || interests
-        })
-        setFilteredProfiles(filtered)
-      } else {
-        setFilteredProfiles(data)
-      }
+      let filtered = applySearch(data, searchProfile)
+      filtered = applyFilters(filtered, activeFilters)
+      setFilteredProfiles(filtered)
 
     } catch (err) {
       console.error("Erro ao buscar dados:", err)
@@ -83,6 +115,18 @@ export default function SearchPage() {
     } finally {
       setLoading(false)
     }
+  }
+
+  useEffect(() => {
+    if (profiles.length > 0) {
+      let filtered = applySearch(profiles, searchProfile)
+      filtered = applyFilters(filtered, activeFilters)
+      setFilteredProfiles(filtered)
+    }
+  }, [activeFilters, searchProfile, profiles])
+
+  const handleFilterChange = (filters) => {
+    setActiveFilters(filters)
   }
 
   const handleProfileClick = (profile) => {
@@ -104,6 +148,8 @@ export default function SearchPage() {
     fetchProfiles()
   }, [searchProfile])
 
+  const hasActiveFilters = activeFilters.area || activeFilters.cidade || activeFilters.tecnologia
+
   if (loading) {
     return (
       <main className="min-h-screen bg-gradient-to-br from-gray-200 to-gray-100 dark:from-[#0d0d0d] dark:to-[#1a1a1a] flex items-center justify-center transition-colors">
@@ -115,8 +161,8 @@ export default function SearchPage() {
     )
   }
 
-   if (error)
-          return <Erro onRetry={fetchProfiles} />
+  if (error)
+    return <Erro onRetry={fetchProfiles} />
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-200 to-gray-100 dark:from-[#0f0f0f] dark:to-[#1c1c1c] transition-colors duration-300">
@@ -145,14 +191,26 @@ export default function SearchPage() {
               </p>
             )}
           </div>
-          <div className="mt-6 text-center">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              {filteredProfiles.length} {filteredProfiles.length === 1 ? 'perfil encontrado' : 'perfis encontrados'}
-            </p>
-          </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <FilterComponent
+          onFilterChange={handleFilterChange}
+          availableFilters={{
+            areas: areas,
+            cidades: cidades,
+            habilidades: habilidades
+          }}
+        />
+
+        <div className="text-center mb-6">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            {filteredProfiles.length} {filteredProfiles.length === 1 ? 'perfil encontrado' : 'perfis encontrados'}
+            {hasActiveFilters && " (filtrados)"}
+          </p>
+        </div>
+
         {error ? (
           <div className="text-center py-16">
             <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800/40 rounded-xl p-6 max-w-md mx-auto">
@@ -179,14 +237,15 @@ export default function SearchPage() {
           <div className="text-center py-16">
             <Users className="mx-auto text-gray-300 dark:text-gray-600 mb-4" size={64} />
             <h3 className="text-xl font-semibold text-gray-500 dark:text-gray-300 mb-2">
-              Nenhum resultado encontrado
+              {hasActiveFilters ? "Nenhum resultado encontrado com os filtros aplicados" : "Nenhum resultado encontrado"}
             </h3>
             <p className="text-gray-400 dark:text-gray-500 mb-6">
-              Não encontramos perfis correspondentes à sua busca
+              {hasActiveFilters ? "Tente ajustar os filtros para ver mais resultados" : "Não encontramos perfis correspondentes à sua busca"}
             </p>
           </div>
         )}
       </div>
+
       <ProfileModal
         isOpen={isModalOpen}
         profile={selectedProfile}

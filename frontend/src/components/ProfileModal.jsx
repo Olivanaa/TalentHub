@@ -4,16 +4,26 @@ import ProjectCard from "./ProjectCard"
 import TrainingCard from "./TrainingCard"
 import { MessageModal } from "./MessageModal"
 import { X, MapPin, Briefcase, Award, Globe, BookOpen } from "lucide-react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function ProfileModal({
     profile,
-    onClose = () => {},
+    onClose = () => { },
     isOpen = false,
     showCloseButton = true
 }) {
     const [showMessageModal, setShowMessageModal] = useState(false)
-    
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add('overflow-hidden')
+
+            return () => {
+                document.body.classList.remove('overflow-hidden')
+            }
+        }
+    }, [isOpen])
+
     if (!profile || !isOpen) return null
 
     const handleRecommend = () => {
@@ -214,9 +224,9 @@ export default function ProfileModal({
                     </div>
                 </div>
             </div>
-            
+
             {showMessageModal && (
-                <MessageModal 
+                <MessageModal
                     profile={profile}
                     isOpen={true}
                     onClose={() => setShowMessageModal(false)}

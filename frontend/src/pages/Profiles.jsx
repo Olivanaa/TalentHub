@@ -3,6 +3,8 @@ import ProfileModal from "../components/ProfileModal"
 import ProfileCard from "../components/ProfileCard"
 import Erro from "./Erro"
 import { ArrowUpDown, SortAsc, SortDesc, Users } from "lucide-react"
+import { useFilters } from "../hooks/useFilters"
+import FilterComponent from "../components/FilterComponent"
 
 export default function Profiles() {
     const [profiles, setProfiles] = useState([])
@@ -12,6 +14,13 @@ export default function Profiles() {
     const [erro, setErro] = useState(null)
     const [sortOrder, setSortOrder] = useState("id")
     const [filteredProfiles, setFilteredProfiles] = useState([])
+    const [activeFilters, setActiveFilters] = useState({
+        area: "",
+        cidade: "",
+        tecnologia: ""
+    })
+
+    const { areas, cidades, habilidades } = useFilters()
 
     const API_URL = import.meta.env.VITE_API_URL
 
@@ -48,12 +57,37 @@ export default function Profiles() {
         }
     }
 
+    const applyFilters = (profilesToFilter, filters) => {
+        return profilesToFilter.filter(profile => {
+            const areaMatch = !filters.area ||
+                (profile.area && profile.area.toLowerCase().includes(filters.area.toLowerCase()))
+
+            const cidadeMatch = !filters.cidade ||
+                (profile.localizacao && profile.localizacao.toLowerCase().includes(filters.cidade.toLowerCase()))
+
+            const tecnologiaMatch = !filters.tecnologia ||
+                (profile.habilidadesTecnicas &&
+                    profile.habilidadesTecnicas.some(skill =>
+                        skill.toLowerCase().includes(filters.tecnologia.toLowerCase())
+                    ))
+
+            return areaMatch && cidadeMatch && tecnologiaMatch
+        })
+    }
+
     useEffect(() => {
         if (profiles.length > 0) {
-            const sorted = sortProfiles(profiles, sortOrder)
+            let filtered = applyFilters(profiles, activeFilters)
+            const sorted = sortProfiles(filtered, sortOrder)
             setFilteredProfiles(sorted)
         }
-    }, [sortOrder, profiles])
+    }, [sortOrder, profiles, activeFilters])
+
+
+    const handleFilterChange = (filters) => {
+        setActiveFilters(filters)
+    }
+
 
     const handleCloseModal = () => {
         setIsModalOpen(false)
@@ -64,6 +98,8 @@ export default function Profiles() {
         setSelectedProfile(profile)
         setIsModalOpen(true)
     }
+
+    const hasActiveFilters = activeFilters.area || activeFilters.cidade || activeFilters.tecnologia
 
     if (loading) {
         return (
@@ -97,7 +133,7 @@ export default function Profiles() {
                         <div className="flex items-center gap-2 text-sm">
                             <ArrowUpDown size={16} className="text-gray-600 dark:text-gray-300" />
                             <span className="text-gray-700 dark:text-gray-300 font-medium">Ordenar por:</span>
-                            
+
                             {[
                                 { id: "id", label: "ID" },
                                 { id: "name-asc", label: "A-Z", icon: <SortAsc size={14} /> },
@@ -108,8 +144,8 @@ export default function Profiles() {
                                     onClick={() => setSortOrder(btn.id)}
                                     className={`px-3 py-1 rounded flex items-center gap-1 transition-all 
                                     ${sortOrder === btn.id
-                                        ? "bg-[#f83f32] text-white"
-                                        : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10"}`}
+                                            ? "bg-[#f83f32] text-white"
+                                            : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10"}`}
                                 >
                                     {btn.icon} {btn.label}
                                 </button>
@@ -124,7 +160,23 @@ export default function Profiles() {
                     </p>
                 </div>
             </div>
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <FilterComponent
+                    onFilterChange={handleFilterChange}
+                    availableFilters={{
+                        areas: areas,
+                        cidades: cidades,
+                        habilidades: habilidades
+                    }}
+                />
+                {hasActiveFilters && (
+                    <div className="text-center mb-8">
+                        <p className="text-sm text-[#64748B] dark:text-gray-400">
+                            {filteredProfiles.length} {filteredProfiles.length === 1 ? "perfil encontrado" : "perfis encontrados"} (filtrados)
+                        </p>
+                    </div>
+                )}
                 {filteredProfiles.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                         {filteredProfiles.map((profile) => (
@@ -139,10 +191,10 @@ export default function Profiles() {
                     <div className="text-center py-16">
                         <Users className="mx-auto text-gray-300 dark:text-gray-600 mb-4" size={64} />
                         <h3 className="text-xl font-semibold text-gray-500 dark:text-gray-300 mb-2">
-                            Nenhum perfil cadastrado
+                            {hasActiveFilters ? "Nenhum perfil encontrado com os filtros aplicados" : "Nenhum perfil cadastrado"}
                         </h3>
                         <p className="text-gray-400 dark:text-gray-500">
-                            Em breve teremos talentos incríveis para você conhecer
+                            {hasActiveFilters ? "Tente ajustar os filtros para ver mais resultados" : "Em breve teremos talentos incríveis para você conhecer"}
                         </p>
                     </div>
                 )}

@@ -3,66 +3,117 @@
         "id": 1,
         "nome": "Ana Carolina Souza",
         "foto": "https://randomuser.me/api/portraits/women/50.jpg",
-        "cargo": "Desenvolvedora Front-end",
-        "resumo": "Especialista em interfaces modernas e responsivas.",
+        "cargo": "Desenvolvedora Front-end Sênior",
+        "resumo": "Especialista em interfaces modernas e responsivas com 5+ anos de experiência.",
         "localizacao": "São Paulo/SP",
         "area": "Desenvolvimento",
         "habilidadesTecnicas": [
             "React",
             "JavaScript",
+            "TypeScript",
             "Tailwind",
-            "HTML",
-            "CSS"
+            "HTML5",
+            "CSS3",
+            "Next.js",
+            "Vue.js",
+            "SASS",
+            "Webpack"
         ],
         "softSkills": [
             "Comunicação",
             "Criatividade",
-            "Organização"
+            "Organização",
+            "Liderança Técnica",
+            "Mentoria"
         ],
         "experiencias": [
             {
                 "empresa": "TechNova",
-                "cargo": "Front-end JR",
+                "cargo": "Front-end Sênior",
+                "inicio": "2023-02",
+                "fim": "Atual",
+                "descricao": "Liderança técnica de equipe front-end, arquitetura de sistemas e mentoria de desenvolvedores juniores."
+            },
+            {
+                "empresa": "TechNova",
+                "cargo": "Front-end Pleno",
                 "inicio": "2021-02",
                 "fim": "2023-01",
-                "descricao": "Desenvolvimento de interfaces web com React."
+                "descricao": "Desenvolvimento de interfaces web com React e implementação de design systems."
+            },
+            {
+                "empresa": "DigitalWorks",
+                "cargo": "Desenvolvedora Front-end JR",
+                "inicio": "2019-03",
+                "fim": "2021-01",
+                "descricao": "Desenvolvimento de landing pages e componentes reutilizáveis em Vue.js."
             }
         ],
         "formacao": [
             {
+                "curso": "Pós-graduação em Arquitetura de Software",
+                "instituicao": "FIAP",
+                "ano": 2023
+            },
+            {
                 "curso": "Análise e Desenvolvimento de Sistemas",
                 "instituicao": "FIAP",
                 "ano": 2021
+            },
+            {
+                "curso": "Técnico em Informática",
+                "instituicao": "ETEC",
+                "ano": 2018
             }
         ],
         "projetos": [
             {
                 "titulo": "Dashboard Administrativo",
                 "link": "https://github.com/ana/dashboard",
-                "descricao": "Painel moderno para controle de vendas."
+                "descricao": "Painel moderno para controle de vendas com gráficos interativos e relatórios em tempo real."
+            },
+            {
+                "titulo": "Design System Enterprise",
+                "link": "https://github.com/ana/design-system",
+                "descricao": "Sistema de design completo com componentes React, documentação e ferramentas de desenvolvimento."
+            },
+            {
+                "titulo": "E-commerce Platform",
+                "link": "https://github.com/ana/ecommerce",
+                "descricao": "Plataforma de e-commerce com PWA, carrinho dinâmico e integração com múltiplos gateways de pagamento."
             }
         ],
         "certificacoes": [
-            "Certificação React Avançado"
+            "Certificação React Avançado",
+            "AWS Cloud Practitioner",
+            "Scrum Master Certified",
+            "Google Mobile Web Specialist",
+            "TypeScript Professional Developer"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
+                "nivel": "Fluente"
+            },
+            {
+                "idioma": "Espanhol",
                 "nivel": "Intermediário"
             }
         ],
         "areaInteresses": [
             "UI/UX",
             "Design Systems",
-            "Acessibilidade"
+            "Acessibilidade",
+            "PWA",
+            "Web Performance"
         ]
     },
     {
         "id": 2,
         "nome": "Bruno Henrique Ferreira",
         "foto": "https://randomuser.me/api/portraits/men/38.jpg",
-        "cargo": "Engenheiro de Software",
-        "resumo": "Experiência em microsserviços e arquitetura escalável.",
+        "cargo": "Engenheiro de Software Sênior",
+        "resumo": "Experiência em microsserviços e arquitetura escalável com 6+ anos na área.",
         "localizacao": "Rio de Janeiro/RJ",
         "area": "Desenvolvimento",
         "habilidadesTecnicas": [
@@ -70,114 +121,231 @@
             "Spring Boot",
             "PostgreSQL",
             "Docker",
-            "AWS"
+            "AWS",
+            "Kubernetes",
+            "Microservices",
+            "Redis",
+            "Kafka",
+            "MongoDB"
         ],
         "softSkills": [
             "Liderança",
             "Pensamento Analítico",
-            "Trabalho em Equipe"
+            "Trabalho em Equipe",
+            "Gestão de Projetos",
+            "Arquitetura de Sistemas"
         ],
         "experiencias": [
             {
                 "empresa": "CloudBridge",
-                "cargo": "Software Engineer",
-                "inicio": "2020-01",
+                "cargo": "Tech Lead",
+                "inicio": "2024-06",
+                "fim": "Atual",
+                "descricao": "Liderança técnica de squads, definição de arquitetura e tomada de decisões estratégicas."
+            },
+            {
+                "empresa": "CloudBridge",
+                "cargo": "Software Engineer Sênior",
+                "inicio": "2022-01",
                 "fim": "2024-05",
-                "descricao": "Implementação de APIs em alta escala."
+                "descricao": "Implementação de APIs em alta escala e migração para arquitetura de microsserviços."
+            },
+            {
+                "empresa": "CloudBridge",
+                "cargo": "Software Engineer Pleno",
+                "inicio": "2020-01",
+                "fim": "2021-12",
+                "descricao": "Desenvolvimento de serviços backend e integração com sistemas legados."
+            },
+            {
+                "empresa": "SysTech Solutions",
+                "cargo": "Desenvolvedor Java JR",
+                "inicio": "2018-06",
+                "fim": "2019-12",
+                "descricao": "Manutenção de sistemas legados e desenvolvimento de novas funcionalidades."
             }
         ],
         "formacao": [
             {
+                "curso": "MBA em Arquitetura de Software",
+                "instituicao": "FGV",
+                "ano": 2022
+            },
+            {
                 "curso": "Engenharia da Computação",
                 "instituicao": "UFRJ",
                 "ano": 2019
+            },
+            {
+                "curso": "Técnico em Redes de Computadores",
+                "instituicao": "FAETEC",
+                "ano": 2015
             }
         ],
         "projetos": [
             {
                 "titulo": "Sistema de Gestão de Estoque",
                 "link": "https://github.com/bruno/estoque",
-                "descricao": "Aplicação completa com autenticação e dashboards."
+                "descricao": "Aplicação completa com autenticação, dashboards e integração com ERPs."
+            },
+            {
+                "titulo": "Plataforma de Pagamentos",
+                "link": "https://github.com/bruno/payments",
+                "descricao": "Sistema de processamento de pagamentos com múltiplos providers e antifraude."
+            },
+            {
+                "titulo": "API Gateway Enterprise",
+                "link": "https://github.com/bruno/api-gateway",
+                "descricao": "Gateway de APIs com rate limiting, autenticação e monitoramento distribuído."
             }
         ],
         "certificacoes": [
-            "AWS Cloud Practitioner"
+            "AWS Cloud Practitioner",
+            "AWS Solutions Architect",
+            "Oracle Java Certified Professional",
+            "Kubernetes Application Developer",
+            "Spring Professional Certification"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
                 "nivel": "Avançado"
+            },
+            {
+                "idioma": "Francês",
+                "nivel": "Básico"
             }
         ],
         "areaInteresses": [
             "Cloud",
             "Arquitetura",
-            "SRE"
+            "SRE",
+            "DevOps",
+            "System Design"
         ]
     },
     {
         "id": 3,
         "nome": "Carla Mendes Silva",
         "foto": "https://randomuser.me/api/portraits/women/2.jpg",
-        "cargo": "UX Designer",
-        "resumo": "Cria experiências digitais inclusivas.",
+        "cargo": "UX Designer Sênior",
+        "resumo": "Cria experiências digitais inclusivas com foco em pesquisa e acessibilidade.",
         "localizacao": "Curitiba/PR",
         "area": "Design",
         "habilidadesTecnicas": [
             "Figma",
             "Design System",
             "Prototipação",
-            "Pesquisa UX"
+            "Pesquisa UX",
+            "Adobe Creative Suite",
+            "User Testing",
+            "Accessibility",
+            "Design Thinking",
+            "Sketch",
+            "InVision"
         ],
         "softSkills": [
             "Empatia",
             "Comunicação",
-            "Trabalho Colaborativo"
+            "Trabalho Colaborativo",
+            "Pensamento Crítico",
+            "Facilitação"
         ],
         "experiencias": [
             {
                 "empresa": "DesignLab",
+                "cargo": "Lead UX Designer",
+                "inicio": "2023-03",
+                "fim": "Atual",
+                "descricao": "Liderança do time de UX, definição de processos e estratégia de produto."
+            },
+            {
+                "empresa": "DesignLab",
+                "cargo": "Product Designer Sênior",
+                "inicio": "2021-06",
+                "fim": "2023-02",
+                "descricao": "Desenvolvimento de interfaces centradas no usuário e condução de pesquisas qualitativas."
+            },
+            {
+                "empresa": "DesignLab",
                 "cargo": "Product Designer",
                 "inicio": "2019-05",
-                "fim": "2023-02",
-                "descricao": "Desenvolvimento de interfaces centradas no usuário."
+                "fim": "2021-05",
+                "descricao": "Criação de wireframes, protótipos e testes de usabilidade."
+            },
+            {
+                "empresa": "CreativeMind",
+                "cargo": "UX Designer JR",
+                "inicio": "2018-01",
+                "fim": "2019-04",
+                "descricao": "Suporte em projetos de design e pesquisa com usuários."
             }
         ],
         "formacao": [
             {
+                "curso": "Pós-graduação em Psicologia Cognitiva",
+                "instituicao": "PUC-PR",
+                "ano": 2022
+            },
+            {
                 "curso": "Design Digital",
                 "instituicao": "PUC-PR",
                 "ano": 2018
+            },
+            {
+                "curso": "Curso Livre em Acessibilidade Digital",
+                "instituicao": "Alura",
+                "ano": 2020
             }
         ],
         "projetos": [
             {
                 "titulo": "App de Saúde Mental",
                 "link": "https://github.com/carla/app-mental",
-                "descricao": "Plataforma de apoio emocional com gamificação."
+                "descricao": "Plataforma de apoio emocional com gamificação e acompanhamento profissional."
+            },
+            {
+                "titulo": "Sistema de Design Acessível",
+                "link": "https://github.com/carla/design-system",
+                "descricao": "Design system com foco em acessibilidade WCAG 2.1 AA e componentes inclusivos."
+            },
+            {
+                "titulo": "Plataforma de Educação Online",
+                "link": "https://github.com/carla/edu-platform",
+                "descricao": "Redesign completo de plataforma EAD com foco em experiência mobile-first."
             }
         ],
         "certificacoes": [
-            "UX Research Expert"
+            "UX Research Expert",
+            "Accessibility Specialist",
+            "Design Thinking Practitioner",
+            "Nielsen Norman Group UX Certified",
+            "Google UX Design Professional"
         ],
         "idiomas": [
             {
                 "idioma": "Espanhol",
                 "nivel": "Intermediário"
+            },
+            {
+                "idioma": "Inglês",
+                "nivel": "Avançado"
             }
         ],
         "areaInteresses": [
             "Psicologia",
             "Acessibilidade",
-            "Inclusão"
+            "Inclusão",
+            "Research",
+            "Design Ético"
         ]
     },
     {
         "id": 4,
         "nome": "Diego Ramos",
         "foto": "https://randomuser.me/api/portraits/men/37.jpg",
-        "cargo": "Cientista de Dados",
-        "resumo": "Apaixonado por IA ética e modelagem estatística.",
+        "cargo": "Cientista de Dados Sênior",
+        "resumo": "Apaixonado por IA ética e modelagem estatística com 5+ anos de experiência.",
         "localizacao": "São Paulo/SP",
         "area": "Data Science",
         "habilidadesTecnicas": [
@@ -185,20 +353,48 @@
             "TensorFlow",
             "SQL",
             "Airflow",
-            "Power BI"
+            "Power BI",
+            "PyTorch",
+            "MLOps",
+            "Spark",
+            "Tableau",
+            "Scikit-learn"
         ],
         "softSkills": [
             "Pensamento Crítico",
             "Curiosidade",
-            "Comunicação"
+            "Comunicação",
+            "Resolução de Problemas",
+            "Storytelling com Dados"
         ],
         "experiencias": [
             {
                 "empresa": "DataMind",
+                "cargo": "Data Scientist Sênior",
+                "inicio": "2023-09",
+                "fim": "Atual",
+                "descricao": "Liderança de projetos de machine learning e mentoria de cientistas juniores."
+            },
+            {
+                "empresa": "DataMind",
+                "cargo": "Data Scientist Pleno",
+                "inicio": "2022-03",
+                "fim": "2023-08",
+                "descricao": "Modelagem preditiva para varejo e marketing com foco em ROI."
+            },
+            {
+                "empresa": "DataMind",
                 "cargo": "Data Scientist",
                 "inicio": "2020-03",
-                "fim": "2024-08",
-                "descricao": "Modelagem preditiva para varejo e marketing."
+                "fim": "2022-02",
+                "descricao": "Desenvolvimento de modelos de classificação e clusterização."
+            },
+            {
+                "empresa": "AnalyticsPro",
+                "cargo": "Analista de Dados JR",
+                "inicio": "2018-08",
+                "fim": "2020-02",
+                "descricao": "Análise exploratória de dados e criação de dashboards."
             }
         ],
         "formacao": [
@@ -206,93 +402,182 @@
                 "curso": "Mestrado em Data Science",
                 "instituicao": "USP",
                 "ano": 2020
+            },
+            {
+                "curso": "Bacharelado em Estatística",
+                "instituicao": "USP",
+                "ano": 2018
+            },
+            {
+                "curso": "Especialização em Deep Learning",
+                "instituicao": "DeepLearning.AI",
+                "ano": 2021
             }
         ],
         "projetos": [
             {
                 "titulo": "Modelo de Previsão de Demanda",
                 "link": "https://github.com/diego/demanda",
-                "descricao": "Predição diária para grandes varejistas."
+                "descricao": "Predição diária para grandes varejistas com 95% de acurácia."
+            },
+            {
+                "titulo": "Sistema de Recomendação",
+                "link": "https://github.com/diego/recommender",
+                "descricao": "Algoritmo de recomendação colaborativa para e-commerce."
+            },
+            {
+                "titulo": "Plataforma MLOps",
+                "link": "https://github.com/diego/mlops",
+                "descricao": "Infraestrutura completa para deploy e monitoramento de modelos em produção."
             }
         ],
         "certificacoes": [
-            "TensorFlow Developer"
+            "TensorFlow Developer",
+            "AWS Machine Learning Specialty",
+            "Google Data Analytics Professional",
+            "Microsoft Certified: Data Scientist",
+            "Databricks Data Engineer Associate"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
                 "nivel": "Avançado"
+            },
+            {
+                "idioma": "Alemão",
+                "nivel": "Básico"
             }
         ],
         "areaInteresses": [
             "IA Ética",
             "Big Data",
-            "Machine Learning"
+            "Machine Learning",
+            "MLOps",
+            "Estatística Aplicada"
         ]
     },
     {
         "id": 5,
         "nome": "Eduarda Vasconcelos",
         "foto": "https://randomuser.me/api/portraits/women/3.jpg",
-        "cargo": "Analista de Marketing Digital",
-        "resumo": "Especialista em tráfego pago e automação.",
+        "cargo": "Analista de Marketing Digital Sênior",
+        "resumo": "Especialista em tráfego pago e automação com 4+ anos de experiência.",
         "localizacao": "Fortaleza/CE",
         "area": "Marketing",
         "habilidadesTecnicas": [
             "SEO",
             "Google Ads",
             "Meta Ads",
-            "HubSpot"
+            "HubSpot",
+            "Google Analytics",
+            "Marketing Automation",
+            "CRM",
+            "WordPress",
+            "Mailchimp",
+            "SEMrush"
         ],
         "softSkills": [
             "Criatividade",
             "Resiliência",
-            "Gestão de Tempo"
+            "Gestão de Tempo",
+            "Análise de Dados",
+            "Planejamento Estratégico"
         ],
         "experiencias": [
             {
                 "empresa": "MarketPro",
+                "cargo": "Coordenadora de Marketing Digital",
+                "inicio": "2024-02",
+                "fim": "Atual",
+                "descricao": "Gestão da equipe de marketing digital e planejamento de campanhas multi-canal."
+            },
+            {
+                "empresa": "MarketPro",
                 "cargo": "Analista Pleno",
-                "inicio": "2021-06",
+                "inicio": "2022-07",
                 "fim": "2024-01",
-                "descricao": "Gestão de campanhas e funis de conversão."
+                "descricao": "Gestão de campanhas e funis de conversão com foco em ROI."
+            },
+            {
+                "empresa": "MarketPro",
+                "cargo": "Analista JR",
+                "inicio": "2021-06",
+                "fim": "2022-06",
+                "descricao": "Implementação de campanhas e análise de métricas de performance."
+            },
+            {
+                "empresa": "Agência Click",
+                "cargo": "Estagiária em Marketing",
+                "inicio": "2020-01",
+                "fim": "2021-05",
+                "descricao": "Suporte em campanhas de mídias sociais e produção de conteúdo."
             }
         ],
         "formacao": [
             {
+                "curso": "MBA em Marketing Digital",
+                "instituicao": "FECAP",
+                "ano": 2023
+            },
+            {
                 "curso": "Publicidade e Propaganda",
                 "instituicao": "Unifor",
                 "ano": 2020
+            },
+            {
+                "curso": "Curso Avançado em Growth Marketing",
+                "instituicao": "Coursera",
+                "ano": 2022
             }
         ],
         "projetos": [
             {
                 "titulo": "Sistema de Funil Automatizado",
                 "link": "https://github.com/eduarda/funil",
-                "descricao": "Automação de CRM e email marketing."
+                "descricao": "Automação de CRM e email marketing com segmentação avançada."
+            },
+            {
+                "titulo": "Dashboard de Performance",
+                "link": "https://github.com/eduarda/dashboard",
+                "descricao": "Painel unificado de métricas de marketing com integração multi-plataforma."
+            },
+            {
+                "titulo": "Estratégia de Content Marketing",
+                "link": "https://github.com/eduarda/content-strategy",
+                "descricao": "Plano completo de conteúdo que aumentou o tráfego orgânico em 300%."
             }
         ],
         "certificacoes": [
-            "Meta Blueprint"
+            "Meta Blueprint",
+            "Google Ads Certification",
+            "HubSpot Inbound Marketing",
+            "Google Analytics Individual Qualification",
+            "Content Marketing Certification"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
+                "nivel": "Intermediário"
+            },
+            {
+                "idioma": "Francês",
                 "nivel": "Básico"
             }
         ],
         "areaInteresses": [
             "Neuromarketing",
             "Crescimento",
-            "Copywriting"
+            "Copywriting",
+            "Marketing de Conteúdo",
+            "Analytics"
         ]
     },
     {
         "id": 6,
         "nome": "Fernando Ribeiro",
         "foto": "https://randomuser.me/api/portraits/men/36.jpg",
-        "cargo": "DevOps Engineer",
-        "resumo": "Especialista em CI/CD e infraestrutura em nuvem.",
+        "cargo": "DevOps Engineer Sênior",
+        "resumo": "Especialista em CI/CD e infraestrutura em nuvem com 5+ anos de experiência.",
         "localizacao": "Porto Alegre/RS",
         "area": "Infraestrutura",
         "habilidadesTecnicas": [
@@ -300,114 +585,237 @@
             "Kubernetes",
             "AWS",
             "Terraform",
-            "Linux"
+            "Linux",
+            "CI/CD",
+            "Jenkins",
+            "GitLab CI",
+            "Prometheus",
+            "Grafana",
+            "Ansible",
+            "Helm",
+            "Istio",
+            "ELK Stack"
         ],
         "softSkills": [
             "Proatividade",
             "Trabalho em Equipe",
-            "Resolução de Problemas"
+            "Resolução de Problemas",
+            "Pensamento Sistêmico",
+            "Gestão de Crises"
         ],
         "experiencias": [
             {
                 "empresa": "CloudOps",
+                "cargo": "DevOps Sênior",
+                "inicio": "2024-03",
+                "fim": "Atual",
+                "descricao": "Liderança técnica em projetos de migração cloud e implementação de práticas GitOps."
+            },
+            {
+                "empresa": "CloudOps",
+                "cargo": "DevOps Pleno",
+                "inicio": "2023-01",
+                "fim": "2024-02",
+                "descricao": "Implementação de pipelines CI/CD e automação de infraestrutura como código."
+            },
+            {
+                "empresa": "CloudOps",
                 "cargo": "DevOps JR",
                 "inicio": "2021-09",
-                "fim": "2024-02",
-                "descricao": "Pipelines e automação de infraestrutura."
+                "fim": "2022-12",
+                "descricao": "Pipelines e automação de infraestrutura, monitoramento e troubleshooting."
+            },
+            {
+                "empresa": "TechSupport RS",
+                "cargo": "Analista de Infraestrutura",
+                "inicio": "2020-03",
+                "fim": "2021-08",
+                "descricao": "Administração de servidores Linux e virtualização VMware."
             }
         ],
         "formacao": [
             {
+                "curso": "Pós-graduação em Cloud Computing",
+                "instituicao": "PUCRS",
+                "ano": 2023
+            },
+            {
                 "curso": "Sistemas de Informação",
                 "instituicao": "UFRGS",
                 "ano": 2021
+            },
+            {
+                "curso": "Redes de Computadores",
+                "instituicao": "SENAC",
+                "ano": 2019
             }
         ],
         "projetos": [
             {
                 "titulo": "Pipeline CI/CD Completo",
                 "link": "https://github.com/fernando/cicd",
-                "descricao": "CI com GitHub Actions e deploy AWS."
+                "descricao": "CI com GitHub Actions e deploy AWS com rollback automático e canary deployment."
+            },
+            {
+                "titulo": "Plataforma Kubernetes Multi-cluster",
+                "link": "https://github.com/fernando/k8s-platform",
+                "descricao": "Orquestração de múltiplos clusters Kubernetes com GitOps e observabilidade."
+            },
+            {
+                "titulo": "Infraestrutura como Código Enterprise",
+                "link": "https://github.com/fernando/iac-enterprise",
+                "descricao": "Terraform modules para provisionamento completo de infraestrutura AWS."
             }
         ],
         "certificacoes": [
-            "AWS DevOps Engineer"
+            "AWS DevOps Engineer",
+            "Certified Kubernetes Administrator (CKA)",
+            "Terraform Associate",
+            "Docker Certified Associate",
+            "Linux Foundation Certified System Administrator"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
-                "nivel": "Intermediário"
+                "nivel": "Avançado"
+            },
+            {
+                "idioma": "Espanhol",
+                "nivel": "Básico"
             }
         ],
         "areaInteresses": [
             "Automação",
             "Cloud",
-            "Segurança"
+            "Segurança",
+            "GitOps",
+            "SRE"
         ]
     },
     {
         "id": 7,
         "nome": "Letícia Nogueira",
         "foto": "https://randomuser.me/api/portraits/women/4.jpg",
-        "cargo": "Analista de Marketing Digital",
-        "resumo": "Especialista em campanhas pagas e estratégias de conteúdo.",
+        "cargo": "Analista de Marketing Digital Sênior",
+        "resumo": "Especialista em campanhas pagas e estratégias de conteúdo com 4+ anos de experiência.",
         "localizacao": "Recife/PE",
         "area": "Marketing",
         "habilidadesTecnicas": [
             "Google Ads",
             "Meta Ads",
             "SEO",
-            "Analytics"
+            "Analytics",
+            "Google Analytics 4",
+            "Google Tag Manager",
+            "SEMrush",
+            "Ahrefs",
+            "HubSpot",
+            "Marketing Automation",
+            "Content Marketing",
+            "Social Media Marketing"
         ],
         "softSkills": [
             "Criatividade",
             "Comunicação",
-            "Gestão de Tempo"
+            "Gestão de Tempo",
+            "Análise de Dados",
+            "Planejamento Estratégico"
         ],
         "experiencias": [
             {
                 "empresa": "Bright Ads",
-                "cargo": "Analista",
-                "inicio": "2021-06",
+                "cargo": "Coordenadora de Marketing Digital",
+                "inicio": "2024-04",
+                "fim": "Atual",
+                "descricao": "Liderança da equipe de performance e planejamento de estratégias multi-canal."
+            },
+            {
+                "empresa": "Bright Ads",
+                "cargo": "Analista Sênior",
+                "inicio": "2023-04",
                 "fim": "2024-03",
+                "descricao": "Gestão de campanhas de tráfego pago e análise de resultados com foco em ROI."
+            },
+            {
+                "empresa": "Bright Ads",
+                "cargo": "Analista Pleno",
+                "inicio": "2022-06",
+                "fim": "2023-03",
+                "descricao": "Otimização de campanhas e implementação de estratégias de remarketing."
+            },
+            {
+                "empresa": "Bright Ads",
+                "cargo": "Analista JR",
+                "inicio": "2021-06",
+                "fim": "2022-05",
                 "descricao": "Gestão de campanhas de tráfego pago e análise de resultados."
             }
         ],
         "formacao": [
             {
+                "curso": "MBA em Marketing Digital e Vendas",
+                "instituicao": "FGV",
+                "ano": 2023
+            },
+            {
                 "curso": "Publicidade e Propaganda",
                 "instituicao": "UFPE",
                 "ano": 2020
+            },
+            {
+                "curso": "Curso Avançado em Google Analytics",
+                "instituicao": "Google Academy",
+                "ano": 2022
             }
         ],
         "projetos": [
             {
                 "titulo": "Dashboard de Métricas de Campanhas",
-                "link": "https://example.com",
-                "descricao": "Visualização interativa de KPIs de marketing."
+                "link": "https://github.com/leticia/dashboard",
+                "descricao": "Visualização interativa de KPIs de marketing com integração em tempo real."
+            },
+            {
+                "titulo": "Estratégia de Content Marketing",
+                "link": "https://github.com/leticia/content-strategy",
+                "descricao": "Plano de conteúdo que aumentou o tráfego orgânico em 250% em 6 meses."
+            },
+            {
+                "titulo": "Sistema de Automação de Relatórios",
+                "link": "https://github.com/leticia/automation",
+                "descricao": "Automação de relatórios de performance com Python e Google Sheets API."
             }
         ],
         "certificacoes": [
             "Google Ads Search",
-            "Meta Ads Professional"
+            "Meta Ads Professional",
+            "Google Analytics Individual Qualification",
+            "Inbound Marketing Certification",
+            "Content Marketing Certification"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
+                "nivel": "Avançado"
+            },
+            {
+                "idioma": "Francês",
                 "nivel": "Intermediário"
             }
         ],
         "areaInteresses": [
             "Growth",
-            "Neuromarketing"
+            "Neuromarketing",
+            "Marketing de Conteúdo",
+            "Data-Driven Marketing",
+            "Customer Journey"
         ]
     },
     {
         "id": 8,
         "nome": "Bruno Teixeira",
         "foto": "https://randomuser.me/api/portraits/men/35.jpg",
-        "cargo": "Engenheiro de Dados",
-        "resumo": "Constrói pipelines escaláveis e arquiteturas orientadas a dados.",
+        "cargo": "Engenheiro de Dados Sênior",
+        "resumo": "Constrói pipelines escaláveis e arquiteturas orientadas a dados com 6+ anos de experiência.",
         "localizacao": "Curitiba/PR",
         "area": "Dados",
         "habilidadesTecnicas": [
@@ -415,158 +823,370 @@
             "Spark",
             "Kafka",
             "AWS",
-            "SQL"
+            "SQL",
+            "Airflow",
+            "dbt",
+            "Snowflake",
+            "Data Lakes",
+            "Data Warehousing",
+            "PySpark",
+            "Redshift",
+            "Big Data",
+            "ETL/ELT"
         ],
         "softSkills": [
             "Raciocínio Analítico",
-            "Autonomia"
+            "Autonomia",
+            "Pensamento Sistêmico",
+            "Resolução de Problemas Complexos",
+            "Arquitetura de Dados"
         ],
         "experiencias": [
             {
                 "empresa": "DataFlow",
-                "cargo": "Engenheiro",
-                "inicio": "2020-01",
+                "cargo": "Tech Lead Data Engineering",
+                "inicio": "2024-03",
+                "fim": "Atual",
+                "descricao": "Liderança técnica do time de dados e definição de arquitetura data-driven."
+            },
+            {
+                "empresa": "DataFlow",
+                "cargo": "Engenheiro de Dados Sênior",
+                "inicio": "2022-08",
                 "fim": "2024-02",
+                "descricao": "Desenvolvimento de pipelines e ingestão de dados em nuvem em larga escala."
+            },
+            {
+                "empresa": "DataFlow",
+                "cargo": "Engenheiro de Dados Pleno",
+                "inicio": "2021-03",
+                "fim": "2022-07",
+                "descricao": "Implementação de data lakes e processos ETL/ELT."
+            },
+            {
+                "empresa": "DataFlow",
+                "cargo": "Engenheiro de Dados",
+                "inicio": "2020-01",
+                "fim": "2021-02",
                 "descricao": "Desenvolvimento de pipelines e ingestão de dados em nuvem."
+            },
+            {
+                "empresa": "Analytics Corp",
+                "cargo": "Analista de Dados",
+                "inicio": "2018-06",
+                "fim": "2019-12",
+                "descricao": "Análise de dados e criação de relatórios business intelligence."
             }
         ],
         "formacao": [
             {
+                "curso": "Mestrado em Ciência de Dados",
+                "instituicao": "UTFPR",
+                "ano": 2022
+            },
+            {
                 "curso": "Sistemas de Informação",
                 "instituicao": "UTFPR",
                 "ano": 2019
+            },
+            {
+                "curso": "Especialização em Big Data",
+                "instituicao": "Data Science Academy",
+                "ano": 2021
             }
         ],
         "projetos": [
             {
                 "titulo": "Pipeline de Streaming Kafka + Spark",
-                "link": "https://github.com",
-                "descricao": "Processamento em tempo real."
+                "link": "https://github.com/bruno-teixeira/streaming-pipeline",
+                "descricao": "Processamento em tempo real com exactly-once semantics e checkpointing."
+            },
+            {
+                "titulo": "Data Platform Enterprise",
+                "link": "https://github.com/bruno-teixeira/data-platform",
+                "descricao": "Plataforma completa de dados com catalogação, qualidade e governança."
+            },
+            {
+                "titulo": "Modern Data Stack Implementation",
+                "link": "https://github.com/bruno-teixeira/modern-data-stack",
+                "descricao": "Implementação de stack moderna com dbt, Airflow, Snowflake e Metabase."
             }
         ],
         "certificacoes": [
-            "AWS Data Engineer"
+            "AWS Data Engineer",
+            "Apache Spark Developer",
+            "dbt Fundamentals",
+            "Data Engineering on Google Cloud",
+            "Confluent Kafka Certified Developer"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
-                "nivel": "Avançado"
+                "nivel": "Fluente"
+            },
+            {
+                "idioma": "Alemão",
+                "nivel": "Básico"
             }
         ],
         "areaInteresses": [
             "Big Data",
-            "Arquitetura de Dados"
+            "Arquitetura de Dados",
+            "Data Mesh",
+            "Data Governance",
+            "Real-time Processing"
         ]
     },
     {
         "id": 9,
         "nome": "Camila Ribeiro",
         "foto": "https://randomuser.me/api/portraits/women/9.jpg",
-        "cargo": "UX/UI Designer",
-        "resumo": "Cria interfaces intuitivas e acessíveis.",
+        "cargo": "UX/UI Designer Sênior",
+        "resumo": "Cria interfaces intuitivas e acessíveis com foco em pesquisa e design centrado no usuário.",
         "localizacao": "Florianópolis/SC",
         "area": "Design",
         "habilidadesTecnicas": [
             "Figma",
             "Design System",
             "Prototipação",
-            "Acessibilidade"
+            "Acessibilidade",
+            "User Research",
+            "Usability Testing",
+            "Interaction Design",
+            "Visual Design",
+            "Adobe Creative Suite",
+            "Design Thinking",
+            "Wireframing",
+            "Information Architecture"
         ],
         "softSkills": [
             "Empatia",
             "Colaboração",
-            "Escuta Ativa"
+            "Escuta Ativa",
+            "Pensamento Crítico",
+            "Facilitação de Workshops"
         ],
         "experiencias": [
             {
                 "empresa": "Craft Studio",
-                "cargo": "Designer",
-                "inicio": "2021-02",
+                "cargo": "Lead UX Designer",
+                "inicio": "2024-05",
+                "fim": "Atual",
+                "descricao": "Liderança do time de design e definição de estratégia de produto."
+            },
+            {
+                "empresa": "Craft Studio",
+                "cargo": "UX Designer Sênior",
+                "inicio": "2023-03",
                 "fim": "2024-04",
+                "descricao": "Pesquisa de usuários e criação de jornadas centradas no usuário."
+            },
+            {
+                "empresa": "Craft Studio",
+                "cargo": "UX/UI Designer",
+                "inicio": "2022-01",
+                "fim": "2023-02",
                 "descricao": "Responsável por wireframes e pesquisas de usabilidade."
+            },
+            {
+                "empresa": "Craft Studio",
+                "cargo": "UI Designer",
+                "inicio": "2021-02",
+                "fim": "2021-12",
+                "descricao": "Criação de interfaces e implementação de design systems."
+            },
+            {
+                "empresa": "Digital Agency SC",
+                "cargo": "Designer JR",
+                "inicio": "2019-08",
+                "fim": "2021-01",
+                "descricao": "Design de interfaces para sites e aplicativos mobile."
             }
         ],
         "formacao": [
             {
+                "curso": "Pós-graduação em UX Research",
+                "instituicao": "IADE",
+                "ano": 2023
+            },
+            {
                 "curso": "Design Digital",
                 "instituicao": "UDESC",
                 "ano": 2020
+            },
+            {
+                "curso": "Curso Avançado em Acessibilidade Digital",
+                "instituicao": "Interaction Design Foundation",
+                "ano": 2022
             }
         ],
         "projetos": [
             {
                 "titulo": "App de Acessibilidade Urbana",
-                "link": "https://behance.net",
-                "descricao": "Mapeamento colaborativo de locais acessíveis."
+                "link": "https://behance.net/camila-accessible",
+                "descricao": "Mapeamento colaborativo de locais acessíveis com navegação inclusiva."
+            },
+            {
+                "titulo": "Design System Enterprise",
+                "link": "https://behance.net/camila-design-system",
+                "descricao": "Sistema de design escalável com componentes acessíveis e documentação completa."
+            },
+            {
+                "titulo": "Plataforma de Saúde Digital",
+                "link": "https://behance.net/camila-health",
+                "descricao": "Redesign completo focando em usabilidade para usuários idosos."
             }
         ],
         "certificacoes": [
-            "UX Research Certificate"
+            "UX Research Certificate",
+            "Accessibility Specialist",
+            "Nielsen Norman Group UX Certified",
+            "Figma Professional",
+            "Design Thinking Practitioner"
         ],
         "idiomas": [
             {
                 "idioma": "Espanhol",
-                "nivel": "Intermediário"
+                "nivel": "Avançado"
+            },
+            {
+                "idioma": "Inglês",
+                "nivel": "Fluente"
             }
         ],
         "areaInteresses": [
             "Design Inclusivo",
-            "Experiência do Usuário"
+            "Experiência do Usuário",
+            "Acessibilidade",
+            "User Research",
+            "Design Ético"
         ]
     },
     {
         "id": 10,
         "nome": "Henrique Duarte",
         "foto": "https://randomuser.me/api/portraits/men/34.jpg",
-        "cargo": "Desenvolvedor Backend",
-        "resumo": "Especialista em APIs performáticas e escaláveis.",
+        "cargo": "Desenvolvedor Backend Sênior",
+        "resumo": "Especialista em APIs performáticas e escaláveis com 6+ anos de experiência em arquitetura de software.",
         "localizacao": "Belo Horizonte/MG",
         "area": "Desenvolvimento",
         "habilidadesTecnicas": [
             "Node.js",
             "TypeScript",
             "SQL",
-            "Docker"
+            "Docker",
+            "Microservices",
+            "AWS",
+            "MongoDB",
+            "PostgreSQL",
+            "Redis",
+            "RabbitMQ",
+            "GraphQL",
+            "REST APIs",
+            "Jest",
+            "NestJS"
         ],
         "softSkills": [
             "Proatividade",
-            "Resolução de Problemas"
+            "Resolução de Problemas",
+            "Arquitetura de Software",
+            "Mentoria",
+            "Code Review"
         ],
         "experiencias": [
             {
                 "empresa": "BlueTech",
+                "cargo": "Tech Lead Backend",
+                "inicio": "2024-07",
+                "fim": "Atual",
+                "descricao": "Liderança técnica do time backend e definição de arquitetura de sistemas."
+            },
+            {
+                "empresa": "BlueTech",
+                "cargo": "Backend Developer Sênior",
+                "inicio": "2023-01",
+                "fim": "2024-06",
+                "descricao": "Desenvolvimento de APIs REST e microsserviços em alta escala."
+            },
+            {
+                "empresa": "BlueTech",
+                "cargo": "Backend Developer Pleno",
+                "inicio": "2021-03",
+                "fim": "2022-12",
+                "descricao": "Implementação de serviços backend e integração com sistemas externos."
+            },
+            {
+                "empresa": "BlueTech",
                 "cargo": "Backend Developer",
                 "inicio": "2019-05",
-                "fim": "2024-06",
+                "fim": "2021-02",
                 "descricao": "Desenvolvimento de APIs REST e microsserviços."
+            },
+            {
+                "empresa": "StartupDev",
+                "cargo": "Desenvolvedor Full Stack JR",
+                "inicio": "2018-02",
+                "fim": "2019-04",
+                "descricao": "Desenvolvimento full stack com Node.js e React."
             }
         ],
         "formacao": [
             {
+                "curso": "MBA em Arquitetura de Software Distribuído",
+                "instituicao": "PUC Minas",
+                "ano": 2023
+            },
+            {
                 "curso": "Ciência da Computação",
                 "instituicao": "PUC Minas",
                 "ano": 2018
+            },
+            {
+                "curso": "Especialização em Cloud Computing",
+                "instituicao": "Alura",
+                "ano": 2021
             }
         ],
         "projetos": [
             {
                 "titulo": "API para Marketplace",
-                "link": "https://github.com",
-                "descricao": "Integração de pagamentos e autenticação JWT."
+                "link": "https://github.com/henrique/marketplace-api",
+                "descricao": "Integração de pagamentos, autenticação JWT e microserviços escaláveis."
+            },
+            {
+                "titulo": "Sistema de Notificações em Tempo Real",
+                "link": "https://github.com/henrique/notifications",
+                "descricao": "Arquitetura pub/sub com WebSockets e filas de mensagens."
+            },
+            {
+                "titulo": "Plataforma de E-commerce Microservices",
+                "link": "https://github.com/henrique/ecommerce-microservices",
+                "descricao": "Arquitetura baseada em microsserviços com comunicação assíncrona."
             }
         ],
         "certificacoes": [
-            "Docker Certified Associate"
+            "Docker Certified Associate",
+            "AWS Developer Associate",
+            "Node.js Services Development",
+            "MongoDB Certified Developer",
+            "Scrum Master Certified"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
-                "nivel": "Avançado"
+                "nivel": "Fluente"
+            },
+            {
+                "idioma": "Espanhol",
+                "nivel": "Intermediário"
             }
         ],
         "areaInteresses": [
             "Infraestrutura",
-            "APIs"
+            "APIs",
+            "Microservices",
+            "System Design",
+            "Performance Optimization"
         ]
     },
     {
@@ -1628,336 +2248,750 @@
         "id": 30,
         "nome": "Cláudia Rocha",
         "foto": "https://randomuser.me/api/portraits/women/30.jpg",
-        "cargo": "Scrum Master",
-        "resumo": "Facilitadora ágil com foco em equipes de alta performance.",
+        "cargo": "Scrum Master Sênior",
+        "resumo": "Facilitadora ágil com foco em equipes de alta performance e transformação organizacional.",
         "localizacao": "São Paulo/SP",
         "area": "Gestão",
         "habilidadesTecnicas": [
             "Scrum",
             "Kanban",
             "Coaching",
-            "Facilitação"
+            "Facilitação",
+            "SAFe",
+            "Lean",
+            "Agile Metrics",
+            "Jira",
+            "Confluence",
+            "Retrospectives",
+            "Sprint Planning",
+            "Agile Transformation"
         ],
         "softSkills": [
             "Empatia",
             "Liderança",
-            "Comunicação"
+            "Comunicação",
+            "Mediação de Conflitos",
+            "Mentoria",
+            "Facilitação de Workshops"
         ],
         "experiencias": [
             {
                 "empresa": "AgileWorks",
+                "cargo": "Agile Coach Sênior",
+                "inicio": "2024-07",
+                "fim": "Atual",
+                "descricao": "Liderança da transformação ágil em nível corporativo e mentoria de outros Scrum Masters."
+            },
+            {
+                "empresa": "AgileWorks",
+                "cargo": "Scrum Master Sênior",
+                "inicio": "2022-03",
+                "fim": "2024-06",
+                "descricao": "Facilitação de múltiplos squads e implementação de métricas ágeis avançadas."
+            },
+            {
+                "empresa": "AgileWorks",
+                "cargo": "Scrum Master",
+                "inicio": "2020-08",
+                "fim": "2022-02",
+                "descricao": "Suporte a squads de desenvolvimento e implementação de práticas ágeis."
+            },
+            {
+                "empresa": "AgileWorks",
                 "cargo": "Scrum Master",
                 "inicio": "2019-05",
-                "fim": "2024-06",
-                "descricao": "Suporte a squads de desenvolvimento."
+                "fim": "2020-07",
+                "descricao": "Suporte a squads de desenvolvimento e facilitação de cerimônias ágeis."
+            },
+            {
+                "empresa": "TechSolutions",
+                "cargo": "Product Owner",
+                "inicio": "2017-02",
+                "fim": "2019-04",
+                "descricao": "Gestão de backlog e definição de roadmap de produto."
             }
         ],
         "formacao": [
             {
+                "curso": "MBA em Gestão de Projetos Ágeis",
+                "instituicao": "FIA",
+                "ano": 2021
+            },
+            {
                 "curso": "Psicologia Organizacional",
                 "instituicao": "PUC-SP",
                 "ano": 2018
+            },
+            {
+                "curso": "Especialização em Agile Coaching",
+                "instituicao": "Scrum Alliance",
+                "ano": 2020
             }
         ],
         "projetos": [
             {
                 "titulo": "Cultura Ágil Corporativa",
                 "link": "https://example.com/agile",
-                "descricao": "Implementação de práticas ágeis."
+                "descricao": "Implementação de práticas ágeis em 15 squads com aumento de 40% na velocidade de entrega."
+            },
+            {
+                "titulo": "Framework de Métricas Ágeis",
+                "link": "https://example.com/metrics",
+                "descricao": "Sistema de métricas para acompanhamento de saúde de squads e previsibilidade."
+            },
+            {
+                "titulo": "Programa de Mentoria Ágil",
+                "link": "https://example.com/mentoring",
+                "descricao": "Estrutura de mentoria para desenvolvimento de novos Scrum Masters na organização."
             }
         ],
         "certificacoes": [
-            "PSM I – Scrum.org"
+            "PSM I – Scrum.org",
+            "PSM II – Scrum.org",
+            "Certified Scrum Professional",
+            "SAFe Program Consultant",
+            "ICAgile Certified Professional"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
+                "nivel": "Avançado"
+            },
+            {
+                "idioma": "Espanhol",
                 "nivel": "Intermediário"
             }
         ],
         "areaInteresses": [
             "Agilidade",
             "Liderança",
-            "Gestão humanizada"
+            "Gestão humanizada",
+            "Transformação Digital",
+            "People Analytics"
         ]
     },
     {
         "id": 31,
         "nome": "João Vieira",
         "foto": "https://randomuser.me/api/portraits/men/14.jpg",
-        "cargo": "Cloud Architect",
-        "resumo": "Arquiteto especializado em soluções distribuídas e alta performance.",
+        "cargo": "Cloud Architect Sênior",
+        "resumo": "Arquiteto especializado em soluções distribuídas e alta performance com 8+ anos em cloud.",
         "localizacao": "Florianópolis/SC",
         "area": "Tecnologia",
         "habilidadesTecnicas": [
             "AWS",
             "Azure",
             "Terraform",
-            "Kubernetes"
+            "Kubernetes",
+            "Docker",
+            "CI/CD",
+            "Microservices",
+            "Serverless",
+            "Networking",
+            "Security",
+            "Cost Optimization",
+            "Disaster Recovery"
         ],
         "softSkills": [
             "Comunicação",
-            "Análise crítica"
+            "Análise crítica",
+            "Pensamento Sistêmico",
+            "Liderança Técnica",
+            "Arquitetura de Soluções"
         ],
         "experiencias": [
             {
                 "empresa": "CloudMaster",
-                "cargo": "Cloud Architect",
-                "inicio": "2019-05",
+                "cargo": "Principal Cloud Architect",
+                "inicio": "2024-07",
+                "fim": "Atual",
+                "descricao": "Liderança da estratégia cloud corporativa e arquitetura de soluções enterprise."
+            },
+            {
+                "empresa": "CloudMaster",
+                "cargo": "Cloud Architect Sênior",
+                "inicio": "2022-01",
                 "fim": "2024-06",
-                "descricao": "Projetou infraestruturas escaláveis em ambientes multicloud."
+                "descricao": "Projetou infraestruturas escaláveis em ambientes multicloud para clientes enterprise."
+            },
+            {
+                "empresa": "CloudMaster",
+                "cargo": "Cloud Architect",
+                "inicio": "2020-03",
+                "fim": "2021-12",
+                "descricao": "Arquitetura de soluções cloud e migração de workloads para AWS e Azure."
+            },
+            {
+                "empresa": "CloudMaster",
+                "cargo": "Cloud Engineer",
+                "inicio": "2019-05",
+                "fim": "2020-02",
+                "descricao": "Implementação e manutenção de infraestrutura cloud."
+            },
+            {
+                "empresa": "TechSys",
+                "cargo": "DevOps Engineer",
+                "inicio": "2017-08",
+                "fim": "2019-04",
+                "descricao": "Automação de infraestrutura e pipelines CI/CD."
             }
         ],
         "formacao": [
             {
+                "curso": "Mestrado em Computação em Nuvem",
+                "instituicao": "UFSC",
+                "ano": 2022
+            },
+            {
                 "curso": "Engenharia de Computação",
                 "instituicao": "UFSC",
                 "ano": 2018
+            },
+            {
+                "curso": "Especialização em Segurança em Cloud",
+                "instituicao": "AWS Training",
+                "ano": 2021
             }
         ],
         "projetos": [
             {
                 "titulo": "Arquitetura Multicloud Financeira",
                 "link": "https://example.com/multicloud",
-                "descricao": "Infra resiliente com 99.99% uptime."
+                "descricao": "Infra resiliente com 99.99% uptime e recuperação de desastres em 15 minutos."
+            },
+            {
+                "titulo": "Plataforma Kubernetes Enterprise",
+                "link": "https://example.com/k8s-platform",
+                "descricao": "Orquestração de containers em escala com autoscaling e observabilidade."
+            },
+            {
+                "titulo": "Framework de Governança Cloud",
+                "link": "https://example.com/governance",
+                "descricao": "Políticas de segurança, custo e compliance para operações multicloud."
             }
         ],
         "certificacoes": [
-            "AWS Solutions Architect Professional"
+            "AWS Solutions Architect Professional",
+            "Azure Solutions Architect Expert",
+            "Google Cloud Professional Architect",
+            "Kubernetes Security Specialist",
+            "Terraform Associate"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
-                "nivel": "Avançado"
+                "nivel": "Fluente"
+            },
+            {
+                "idioma": "Alemão",
+                "nivel": "Básico"
             }
         ],
         "areaInteresses": [
             "Cloud",
             "Alta performance",
-            "Infra como código"
+            "Infra como código",
+            "FinOps",
+            "Cloud Security"
         ]
     },
     {
         "id": 32,
         "nome": "Julia Cardoso",
         "foto": "https://randomuser.me/api/portraits/women/32.jpg",
-        "cargo": "Social Media",
-        "resumo": "Gestora de redes com foco em estratégia e engajamento.",
+        "cargo": "Social Media Manager Sênior",
+        "resumo": "Gestora de redes com foco em estratégia e engajamento, especialista em growth hacking e analytics.",
         "localizacao": "Rio de Janeiro/RJ",
         "area": "Marketing",
         "habilidadesTecnicas": [
             "Social Media",
-            "Copa estratégica",
-            "Analytics"
+            "Copy estratégica",
+            "Analytics",
+            "Google Analytics",
+            "Meta Business Suite",
+            "Social Listening",
+            "Content Strategy",
+            "Community Management",
+            "Influencer Marketing",
+            "Paid Social",
+            "Social CRM",
+            "Trend Analysis"
         ],
         "softSkills": [
             "Criatividade",
-            "Storytelling"
+            "Storytelling",
+            "Pensamento Estratégico",
+            "Adaptabilidade",
+            "Gestão de Comunidade"
         ],
         "experiencias": [
             {
                 "empresa": "BrandLab",
+                "cargo": "Social Media Lead",
+                "inicio": "2024-07",
+                "fim": "Atual",
+                "descricao": "Liderança da equipe de social media e definição de estratégia corporativa."
+            },
+            {
+                "empresa": "BrandLab",
+                "cargo": "Social Media Sênior",
+                "inicio": "2023-01",
+                "fim": "2024-06",
+                "descricao": "Gestão de conteúdo e análise de métricas para marcas enterprise."
+            },
+            {
+                "empresa": "BrandLab",
+                "cargo": "Social Media Specialist",
+                "inicio": "2021-08",
+                "fim": "2022-12",
+                "descricao": "Criação de conteúdo e gestão de campanhas em redes sociais."
+            },
+            {
+                "empresa": "BrandLab",
                 "cargo": "Social Media",
                 "inicio": "2020-01",
-                "fim": "2024-06",
-                "descricao": "Gestão de conteúdo e análise de métricas."
+                "fim": "2021-07",
+                "descricao": "Gestão de conteúdo e análise de métricas para clientes diversos."
+            },
+            {
+                "empresa": "Agência Digital RJ",
+                "cargo": "Estagiária de Marketing",
+                "inicio": "2019-03",
+                "fim": "2019-12",
+                "descricao": "Suporte em campanhas de mídias sociais e produção de conteúdo."
             }
         ],
         "formacao": [
             {
+                "curso": "MBA em Marketing Digital",
+                "instituicao": "ESPM",
+                "ano": 2022
+            },
+            {
                 "curso": "Publicidade e Propaganda",
                 "instituicao": "UFRJ",
                 "ano": 2019
+            },
+            {
+                "curso": "Curso Avançado em Social Media Analytics",
+                "instituicao": "Coursera",
+                "ano": 2021
             }
         ],
         "projetos": [
             {
                 "titulo": "Campanha Viral X",
                 "link": "https://example.com/campanha",
-                "descricao": "Campanha que alcançou 2M de visualizações."
+                "descricao": "Campanha que alcançou 2M de visualizações e 500K engajamentos orgânicos."
+            },
+            {
+                "titulo": "Estratégia de Influencer Marketing",
+                "link": "https://example.com/influencer",
+                "descricao": "Programa com 50+ influenciadores que gerou 15M de impressões."
+            },
+            {
+                "titulo": "Sistema de Social Listening",
+                "link": "https://example.com/listening",
+                "descricao": "Plataforma de monitoramento de marca e análise de sentimentos."
             }
         ],
         "certificacoes": [
-            "Meta Social Media Certification"
+            "Meta Social Media Certification",
+            "Google Analytics Individual Qualification",
+            "HubSpot Social Media Certification",
+            "Hootsuite Social Media Professional",
+            "Content Marketing Certification"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
-                "nivel": "Básico"
+                "nivel": "Avançado"
+            },
+            {
+                "idioma": "Espanhol",
+                "nivel": "Intermediário"
             }
         ],
         "areaInteresses": [
             "Branding",
             "Tendências",
-            "Engajamento"
+            "Engajamento",
+            "Social Commerce",
+            "Community Building"
         ]
     },
     {
         "id": 33,
         "nome": "Leonardo Rezende",
         "foto": "https://randomuser.me/api/portraits/men/13.jpg",
-        "cargo": "Software Engineer",
-        "resumo": "Engenheiro full stack que ama resolver problemas complexos.",
+        "cargo": "Software Engineer Sênior",
+        "resumo": "Engenheiro full stack que ama resolver problemas complexos com 5+ anos em desenvolvimento escalável.",
         "localizacao": "Campinas/SP",
         "area": "Tecnologia",
         "habilidadesTecnicas": [
             "Java",
             "React",
             "SQL",
-            "AWS"
+            "AWS",
+            "Spring Boot",
+            "TypeScript",
+            "Microservices",
+            "Docker",
+            "Kubernetes",
+            "Redis",
+            "MongoDB",
+            "GraphQL"
         ],
         "softSkills": [
             "Resiliência",
-            "Raciocínio lógico"
+            "Raciocínio lógico",
+            "Resolução de Problemas Complexos",
+            "Mentoria",
+            "Code Review"
         ],
         "experiencias": [
             {
                 "empresa": "TechBridge",
+                "cargo": "Tech Lead",
+                "inicio": "2024-07",
+                "fim": "Atual",
+                "descricao": "Liderança técnica de squads e definição de arquitetura de sistemas."
+            },
+            {
+                "empresa": "TechBridge",
+                "cargo": "Software Engineer Sênior",
+                "inicio": "2023-03",
+                "fim": "2024-06",
+                "descricao": "Desenvolvimento de sistemas corporativos e mentoria de desenvolvedores."
+            },
+            {
+                "empresa": "TechBridge",
+                "cargo": "Software Engineer Pleno",
+                "inicio": "2022-02",
+                "fim": "2023-02",
+                "descricao": "Implementação de features complexas e refatoração de sistemas legados."
+            },
+            {
+                "empresa": "TechBridge",
                 "cargo": "Software Engineer",
                 "inicio": "2021-04",
-                "fim": "2024-06",
-                "descricao": "Desenvolvimento de sistemas corporativos."
+                "fim": "2022-01",
+                "descricao": "Desenvolvimento de sistemas corporativos full stack."
+            },
+            {
+                "empresa": "StartupInova",
+                "cargo": "Desenvolvedor JR",
+                "inicio": "2020-01",
+                "fim": "2021-03",
+                "descricao": "Desenvolvimento de aplicações web e mobile."
             }
         ],
         "formacao": [
             {
+                "curso": "Pós-graduação em Arquitetura de Software",
+                "instituicao": "Unicamp",
+                "ano": 2023
+            },
+            {
                 "curso": "Engenharia de Software",
                 "instituicao": "Unicamp",
                 "ano": 2020
+            },
+            {
+                "curso": "Curso Avançado em System Design",
+                "instituicao": "Educative",
+                "ano": 2022
             }
         ],
         "projetos": [
             {
                 "titulo": "Sistema de Gestão Financeira",
                 "link": "https://example.com/sistema",
-                "descricao": "Plataforma robusta para empresas."
+                "descricao": "Plataforma robusta para empresas com processamento de transações em tempo real."
+            },
+            {
+                "titulo": "API Gateway Distribuído",
+                "link": "https://example.com/api-gateway",
+                "descricao": "Gateway com rate limiting, caching distribuído e circuit breaker."
+            },
+            {
+                "titulo": "Plataforma de Microserviços",
+                "link": "https://example.com/microservices",
+                "descricao": "Arquitetura baseada em eventos com comunicação assíncrona."
             }
         ],
         "certificacoes": [
-            "Oracle Java SE 11 Developer"
+            "Oracle Java SE 11 Developer",
+            "AWS Developer Associate",
+            "Spring Professional Certification",
+            "Docker Certified Associate",
+            "Scrum Master Certified"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
+                "nivel": "Avançado"
+            },
+            {
+                "idioma": "Espanhol",
                 "nivel": "Intermediário"
             }
         ],
         "areaInteresses": [
             "Backend",
             "Sistemas distribuídos",
-            "Arquitetura"
+            "Arquitetura",
+            "Performance",
+            "Clean Architecture"
         ]
     },
     {
         "id": 34,
         "nome": "Ana Paula Silva",
         "foto": "https://randomuser.me/api/portraits/women/34.jpg",
-        "cargo": "UX/UI Designer",
-        "resumo": "Cria experiências intuitivas com foco no usuário.",
+        "cargo": "UX/UI Designer Sênior",
+        "resumo": "Cria experiências intuitivas com foco no usuário e acessibilidade, especialista em design systems.",
         "localizacao": "São Paulo/SP",
         "area": "Design",
         "habilidadesTecnicas": [
             "Figma",
             "Design System",
-            "Prototipação"
+            "Prototipação",
+            "User Research",
+            "Usability Testing",
+            "Accessibility",
+            "Interaction Design",
+            "Visual Design",
+            "Design Tokens",
+            "Component Libraries",
+            "DesignOps"
         ],
         "softSkills": [
             "Empatia",
-            "Pensamento criativo"
+            "Pensamento criativo",
+            "Colaboração",
+            "Pensamento Crítico",
+            "Facilitação"
         ],
         "experiencias": [
             {
                 "empresa": "CreativeStudio",
+                "cargo": "Lead UX Designer",
+                "inicio": "2024-07",
+                "fim": "Atual",
+                "descricao": "Liderança do time de design e definição de estratégia de produto."
+            },
+            {
+                "empresa": "CreativeStudio",
+                "cargo": "UX/UI Designer Sênior",
+                "inicio": "2022-09",
+                "fim": "2024-06",
+                "descricao": "Criação de interfaces e condução de testes UX para produtos complexos."
+            },
+            {
+                "empresa": "CreativeStudio",
+                "cargo": "UX/UI Designer",
+                "inicio": "2021-01",
+                "fim": "2022-08",
+                "descricao": "Design de interfaces e implementação de design systems."
+            },
+            {
+                "empresa": "CreativeStudio",
                 "cargo": "UX/UI Designer",
                 "inicio": "2019-03",
-                "fim": "2024-06",
+                "fim": "2020-12",
                 "descricao": "Criação de interfaces e condução de testes UX."
+            },
+            {
+                "empresa": "Agência WebSP",
+                "cargo": "UI Designer",
+                "inicio": "2018-01",
+                "fim": "2019-02",
+                "descricao": "Design de interfaces para sites e aplicativos mobile."
             }
         ],
         "formacao": [
             {
+                "curso": "Pós-graduação em Experiência do Usuário",
+                "instituicao": "Istituto Europeo di Design",
+                "ano": 2021
+            },
+            {
                 "curso": "Design Digital",
                 "instituicao": "Anhembi Morumbi",
                 "ano": 2018
+            },
+            {
+                "curso": "Curso Avançado em Design Systems",
+                "instituicao": "Design+Code",
+                "ano": 2020
             }
         ],
         "projetos": [
             {
                 "titulo": "Redesign App de Educação",
                 "link": "https://example.com/ux",
-                "descricao": "Melhoria de acessibilidade e fluxo."
+                "descricao": "Melhoria de acessibilidade e fluxo que aumentou a retenção em 35%."
+            },
+            {
+                "titulo": "Design System Enterprise",
+                "link": "https://example.com/design-system",
+                "descricao": "Sistema de design escalável com 50+ componentes e documentação completa."
+            },
+            {
+                "titulo": "Plataforma de E-commerce Acessível",
+                "link": "https://example.com/ecommerce",
+                "descricao": "Redesign focado em WCAG 2.1 AA para inclusão digital."
             }
         ],
         "certificacoes": [
-            "UX Design – Google"
+            "UX Design – Google",
+            "Accessibility Specialist",
+            "Figma Professional",
+            "Nielsen Norman Group UX Certified",
+            "Design Thinking Practitioner"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
-                "nivel": "Intermediário"
+                "nivel": "Avançado"
+            },
+            {
+                "idioma": "Francês",
+                "nivel": "Básico"
             }
         ],
         "areaInteresses": [
             "UX",
             "Design System",
-            "Acessibilidade"
+            "Acessibilidade",
+            "DesignOps",
+            "User Research"
         ]
     },
     {
         "id": 35,
         "nome": "Daniel Pires",
         "foto": "https://randomuser.me/api/portraits/men/12.jpg",
-        "cargo": "Machine Learning Engineer",
-        "resumo": "Especialista em modelos de IA, MLOps e pipelines inteligentes.",
+        "cargo": "Machine Learning Engineer Sênior",
+        "resumo": "Especialista em modelos de IA, MLOps e pipelines inteligentes com 5+ anos em machine learning.",
         "localizacao": "Porto Alegre/RS",
         "area": "Dados",
         "habilidadesTecnicas": [
             "Python",
             "PyTorch",
             "MLflow",
-            "Docker"
+            "Docker",
+            "TensorFlow",
+            "Kubernetes",
+            "AWS SageMaker",
+            "Feature Stores",
+            "Model Deployment",
+            "A/B Testing",
+            "Data Versioning",
+            "Model Monitoring"
         ],
         "softSkills": [
             "Pensamento analítico",
-            "Proatividade"
+            "Proatividade",
+            "Resolução de Problemas Complexos",
+            "Pensamento Sistêmico",
+            "Mentoria"
         ],
         "experiencias": [
             {
                 "empresa": "DeepVision",
+                "cargo": "MLOps Tech Lead",
+                "inicio": "2024-07",
+                "fim": "Atual",
+                "descricao": "Liderança da plataforma MLOps e estratégia de machine learning em produção."
+            },
+            {
+                "empresa": "DeepVision",
+                "cargo": "MLOps Engineer Sênior",
+                "inicio": "2023-01",
+                "fim": "2024-06",
+                "descricao": "Criação de pipelines de machine learning escaláveis e monitoramento de modelos."
+            },
+            {
+                "empresa": "DeepVision",
+                "cargo": "MLOps Engineer",
+                "inicio": "2021-08",
+                "fim": "2022-12",
+                "descricao": "Implementação de pipelines MLOps e deploy de modelos em produção."
+            },
+            {
+                "empresa": "DeepVision",
                 "cargo": "MLOps Engineer",
                 "inicio": "2020-06",
-                "fim": "2024-06",
+                "fim": "2021-07",
                 "descricao": "Criação de pipelines de machine learning escaláveis."
+            },
+            {
+                "empresa": "DataLabs",
+                "cargo": "Data Scientist",
+                "inicio": "2019-02",
+                "fim": "2020-05",
+                "descricao": "Desenvolvimento de modelos de machine learning e análise exploratória."
             }
         ],
         "formacao": [
             {
+                "curso": "Mestrado em Inteligência Artificial",
+                "instituicao": "UFRGS",
+                "ano": 2022
+            },
+            {
                 "curso": "Ciência da Computação",
                 "instituicao": "UFRGS",
                 "ano": 2019
+            },
+            {
+                "curso": "Especialização em Deep Learning",
+                "instituicao": "DeepLearning.AI",
+                "ano": 2021
             }
         ],
         "projetos": [
             {
                 "titulo": "Modelo de Previsão de Fraudes",
                 "link": "https://example.com/fraude",
-                "descricao": "Modelo de classificação com 94% de acurácia."
+                "descricao": "Modelo de classificação com 94% de acurácia que reduziu fraudes em 60%."
+            },
+            {
+                "titulo": "Plataforma MLOps Enterprise",
+                "link": "https://example.com/mlops-platform",
+                "descricao": "Plataforma completa para experimentação, deploy e monitoramento de modelos."
+            },
+            {
+                "titulo": "Sistema de Recomendação em Tempo Real",
+                "link": "https://example.com/recommendation",
+                "descricao": "Arquitetura de recomendação com atualização online e personalização."
             }
         ],
         "certificacoes": [
             "TensorFlow Developer",
-            "Azure AI Engineer"
+            "Azure AI Engineer",
+            "AWS Machine Learning Specialty",
+            "Kubernetes Application Developer",
+            "MLflow in Production"
         ],
         "idiomas": [
             {
                 "idioma": "Inglês",
-                "nivel": "Avançado"
+                "nivel": "Fluente"
+            },
+            {
+                "idioma": "Alemão",
+                "nivel": "Intermediário"
             }
         ],
         "areaInteresses": [
             "IA",
             "MLOps",
-            "Redes neurais"
+            "Redes neurais",
+            "Model Deployment",
+            "AI Ethics"
         ]
     },
     {
@@ -3177,17 +4211,21 @@
         "nome": "Helena Reis",
         "foto": "https://randomuser.me/api/portraits/women/59.jpg",
         "cargo": "Pesquisadora em IA",
-        "resumo": "Focada em IA ética e modelos generativos.",
+        "resumo": "Focada em IA ética, modelos generativos e mitigação de vieses.",
         "localizacao": "São Paulo/SP",
         "area": "Pesquisa",
         "habilidadesTecnicas": [
             "Python",
             "TensorFlow",
-            "PyTorch"
+            "PyTorch",
+            "Machine Learning",
+            "NLP",
+            "Explainable AI"
         ],
         "softSkills": [
             "Curiosidade",
-            "Pensamento Crítico"
+            "Pensamento Crítico",
+            "Comunicação Escrita"
         ],
         "experiencias": [
             {
@@ -3195,7 +4233,14 @@
                 "cargo": "Pesquisadora",
                 "inicio": "2020-01",
                 "fim": "2024-06",
-                "descricao": "Pesquisa em deep learning e ética."
+                "descricao": "Pesquisa em deep learning, modelos generativos e ética em IA."
+            },
+            {
+                "empresa": "Tech4Good",
+                "cargo": "Analista de Dados Jr.",
+                "inicio": "2018-01",
+                "fim": "2019-12",
+                "descricao": "Modelagem estatística e análise de dados para projetos sociais."
             }
         ],
         "formacao": [
@@ -3203,10 +4248,23 @@
                 "curso": "Ciência da Computação",
                 "instituicao": "USP",
                 "ano": 2019
+            },
+            {
+                "curso": "Mestrado em Inteligência Artificial",
+                "instituicao": "USP",
+                "ano": 2022
             }
         ],
-        "projetos": [],
-        "certificacoes": [],
+        "projetos": [
+            {
+                "titulo": "Modelo para Detecção de Vieses",
+                "link": "",
+                "descricao": "Sistema experimental para identificar vieses em modelos de IA."
+            }
+        ],
+        "certificacoes": [
+            "Deep Learning Specialization (Coursera)"
+        ],
         "idiomas": [
             {
                 "idioma": "Inglês",
@@ -3215,7 +4273,8 @@
         ],
         "areaInteresses": [
             "IA Ética",
-            "Machine Learning"
+            "Machine Learning",
+            "NLP"
         ]
     },
     {
@@ -3223,17 +4282,20 @@
         "nome": "Igor Rocha",
         "foto": "https://randomuser.me/api/portraits/men/24.jpg",
         "cargo": "Gestor de Projetos",
-        "resumo": "Lidera projetos complexos com foco em eficiência.",
+        "resumo": "Lidera projetos complexos com foco em eficiência, métricas e cultura ágil.",
         "localizacao": "Goiânia/GO",
         "area": "Gestão",
         "habilidadesTecnicas": [
             "PMBOK",
             "Scrum",
-            "Kanban"
+            "Kanban",
+            "OKRs",
+            "Jira"
         ],
         "softSkills": [
             "Liderança",
-            "Comunicação"
+            "Comunicação",
+            "Resolução de Conflitos"
         ],
         "experiencias": [
             {
@@ -3241,7 +4303,14 @@
                 "cargo": "Project Manager",
                 "inicio": "2019-06",
                 "fim": "2024-06",
-                "descricao": "Gestão de projetos multidisciplinares."
+                "descricao": "Gestão de projetos multidisciplinares e equipes distribuídas."
+            },
+            {
+                "empresa": "GoTech Solutions",
+                "cargo": "Scrum Master",
+                "inicio": "2017-01",
+                "fim": "2019-05",
+                "descricao": "Implantação de metodologias ágeis e facilitação de squads."
             }
         ],
         "formacao": [
@@ -3249,11 +4318,23 @@
                 "curso": "Administração",
                 "instituicao": "PUC Goiás",
                 "ano": 2018
+            },
+            {
+                "curso": "MBA em Gestão de Projetos",
+                "instituicao": "FGV",
+                "ano": 2022
             }
         ],
-        "projetos": [],
+        "projetos": [
+            {
+                "titulo": "Implantação de PMO",
+                "link": "",
+                "descricao": "Estruturação de Escritório de Projetos em empresa de tecnologia."
+            }
+        ],
         "certificacoes": [
-            "PMP"
+            "PMP",
+            "Scrum Master (PSM-I)"
         ],
         "idiomas": [
             {
@@ -3263,7 +4344,8 @@
         ],
         "areaInteresses": [
             "Projetos",
-            "Agile"
+            "Agile",
+            "Gestão de Equipes"
         ]
     },
     {
@@ -3271,17 +4353,19 @@
         "nome": "Jéssica Andrade",
         "foto": "https://randomuser.me/api/portraits/women/61.jpg",
         "cargo": "Assistente Administrativa",
-        "resumo": "Especialista em organização e processos.",
+        "resumo": "Especialista em organização, processos e suporte operacional.",
         "localizacao": "Manaus/AM",
         "area": "Administrativo",
         "habilidadesTecnicas": [
             "Excel",
             "ERP",
-            "Organização de Documentos"
+            "Gestão de Documentos",
+            "SAP"
         ],
         "softSkills": [
             "Organização",
-            "Responsabilidade"
+            "Responsabilidade",
+            "Agilidade"
         ],
         "experiencias": [
             {
@@ -3289,7 +4373,14 @@
                 "cargo": "Assistente",
                 "inicio": "2020-03",
                 "fim": "2024-06",
-                "descricao": "Rotinas administrativas e atendimento."
+                "descricao": "Rotinas administrativas, atendimento e organização de processos."
+            },
+            {
+                "empresa": "Fábrica AM",
+                "cargo": "Auxiliar Administrativa",
+                "inicio": "2018-01",
+                "fim": "2020-02",
+                "descricao": "Apoio em gestão de estoque e organização de contratos."
             }
         ],
         "formacao": [
@@ -3299,8 +4390,16 @@
                 "ano": 2019
             }
         ],
-        "projetos": [],
-        "certificacoes": [],
+        "projetos": [
+            {
+                "titulo": "Digitalização de Documentos",
+                "link": "",
+                "descricao": "Projeto interno para transformar processos físicos em digitais."
+            }
+        ],
+        "certificacoes": [
+            "Excel Avançado"
+        ],
         "idiomas": [
             {
                 "idioma": "Inglês",
@@ -3309,7 +4408,8 @@
         ],
         "areaInteresses": [
             "Processos",
-            "Organização"
+            "Organização",
+            "Gestão"
         ]
     },
     {
@@ -3317,17 +4417,20 @@
         "nome": "Kaio Ferraz",
         "foto": "https://randomuser.me/api/portraits/men/23.jpg",
         "cargo": "Tester Mobile",
-        "resumo": "Especializado em testes e automação mobile.",
+        "resumo": "Especializado em testes funcionais, automação mobile e qualidade de software.",
         "localizacao": "Recife/PE",
         "area": "Qualidade",
         "habilidadesTecnicas": [
             "Appium",
             "Cypress",
-            "Postman"
+            "Postman",
+            "Jest",
+            "Detox"
         ],
         "softSkills": [
             "Organização",
-            "Detalhismo"
+            "Detalhismo",
+            "Trabalho em Equipe"
         ],
         "experiencias": [
             {
@@ -3335,18 +4438,33 @@
                 "cargo": "Tester Mobile",
                 "inicio": "2021-01",
                 "fim": "2024-06",
-                "descricao": "Testes mobile e automação em apps nativos."
+                "descricao": "Testes manuais e automatizados em apps nativos Android/iOS."
+            },
+            {
+                "empresa": "QualiSoft",
+                "cargo": "QA Jr.",
+                "inicio": "2019-06",
+                "fim": "2020-12",
+                "descricao": "Elaboração de casos de teste e execução de cenários regressivos."
             }
         ],
         "formacao": [
             {
-                "curso": "ADS",
+                "curso": "Análise e Desenvolvimento de Sistemas",
                 "instituicao": "UPE",
                 "ano": 2020
             }
         ],
-        "projetos": [],
-        "certificacoes": [],
+        "projetos": [
+            {
+                "titulo": "Automação para App Financeiro",
+                "link": "",
+                "descricao": "Suíte completa de testes automatizados com Appium."
+            }
+        ],
+        "certificacoes": [
+            "Test Automation Foundation"
+        ],
         "idiomas": [
             {
                 "idioma": "Inglês",
@@ -3355,7 +4473,8 @@
         ],
         "areaInteresses": [
             "Qualidade",
-            "Automação"
+            "Automação",
+            "Mobile"
         ]
     },
     {
@@ -3363,7 +4482,7 @@
         "nome": "Rodrigo Azevedo",
         "foto": "https://randomuser.me/api/portraits/men/22.jpg",
         "cargo": "DevOps Engineer",
-        "resumo": "Automatiza processos e integra equipes de Dev e Ops.",
+        "resumo": "Automatiza pipelines, gerencia infraestrutura e promove cultura DevSecOps.",
         "localizacao": "Vitória/ES",
         "area": "Infraestrutura",
         "habilidadesTecnicas": [
@@ -3371,11 +4490,14 @@
             "Kubernetes",
             "CI/CD",
             "Linux",
-            "AWS"
+            "AWS",
+            "Terraform",
+            "GitHub Actions"
         ],
         "softSkills": [
             "Trabalho em Equipe",
-            "Proatividade"
+            "Proatividade",
+            "Análise de Problemas"
         ],
         "experiencias": [
             {
@@ -3383,7 +4505,14 @@
                 "cargo": "DevOps",
                 "inicio": "2019-04",
                 "fim": "2024-03",
-                "descricao": "Automação de pipelines e implantação com containers."
+                "descricao": "Pipelines, containers, IaC e observabilidade."
+            },
+            {
+                "empresa": "Vitória Tech",
+                "cargo": "Infraestrutura Jr.",
+                "inicio": "2017-01",
+                "fim": "2019-03",
+                "descricao": "Administração de servidores e automação de rotinas."
             }
         ],
         "formacao": [
@@ -3397,11 +4526,17 @@
             {
                 "titulo": "Pipeline GitHub Actions",
                 "link": "https://github.com",
-                "descricao": "CI/CD automatizado."
+                "descricao": "CI/CD automatizado para microsserviços."
+            },
+            {
+                "titulo": "Cluster Kubernetes Pessoal",
+                "link": "",
+                "descricao": "Ambiente completo local para estudos avançados."
             }
         ],
         "certificacoes": [
-            "AWS DevOps Engineer"
+            "AWS DevOps Engineer",
+            "CKA"
         ],
         "idiomas": [
             {
@@ -3411,7 +4546,196 @@
         ],
         "areaInteresses": [
             "DevSecOps",
-            "Cloud"
+            "Cloud",
+            "IaC"
+        ]
+    },
+    {
+        "id": 64,
+        "nome": "Marina Couto",
+        "foto": "https://randomuser.me/api/portraits/women/64.jpg",
+        "cargo": "Designer UX/UI",
+        "resumo": "Cria interfaces centradas no usuário com pesquisas e testes contínuos.",
+        "localizacao": "Curitiba/PR",
+        "area": "Design",
+        "habilidadesTecnicas": [
+            "Figma",
+            "Design System",
+            "User Research",
+            "Prototipação"
+        ],
+        "softSkills": [
+            "Empatia",
+            "Comunicação",
+            "Resolução de Problemas"
+        ],
+        "experiencias": [
+            {
+                "empresa": "BrightApps",
+                "cargo": "UX/UI Designer",
+                "inicio": "2020-05",
+                "fim": "2025-11",
+                "descricao": "Criação de fluxos, wireframes e protótipos para aplicativos mobile."
+            },
+            {
+                "empresa": "DesignUp",
+                "cargo": "UX Researcher",
+                "inicio": "2018-01",
+                "fim": "2020-04",
+                "descricao": "Condução de entrevistas, testes de usabilidade e mapeamento de jornadas."
+            }
+        ],
+        "formacao": [
+            {
+                "curso": "Design Digital",
+                "instituicao": "UTFPR",
+                "ano": 2018
+            }
+        ],
+        "projetos": [
+            {
+                "titulo": "Design System corporativo",
+                "link": "https://github.com",
+                "descricao": "Criação de um Design System escalável para produtos da empresa."
+            }
+        ],
+        "certificacoes": [
+            "UX-PM Level 2"
+        ],
+        "idiomas": [
+            {
+                "idioma": "Inglês",
+                "nivel": "Avançado"
+            }
+        ],
+        "areaInteresses": [
+            "UX Research",
+            "Acessibilidade",
+            "Design de Produto"
+        ]
+    },
+    {
+        "id": 65,
+        "nome": "Thiago Monteiro",
+        "foto": "https://randomuser.me/api/portraits/men/65.jpg",
+        "cargo": "Engenheiro de Dados",
+        "resumo": "Constrói pipelines escaláveis e gerencia grandes volumes de dados.",
+        "localizacao": "Brasília/DF",
+        "area": "Dados",
+        "habilidadesTecnicas": [
+            "Python",
+            "Spark",
+            "Airflow",
+            "SQL",
+            "AWS Redshift"
+        ],
+        "softSkills": [
+            "Raciocínio Lógico",
+            "Organização"
+        ],
+        "experiencias": [
+            {
+                "empresa": "DataFlow",
+                "cargo": "Engenheiro de Dados",
+                "inicio": "2021-02",
+                "fim": "2025-11",
+                "descricao": "Arquitetura de pipelines e integração de dados em ambientes cloud."
+            },
+            {
+                "empresa": "BigData Corp",
+                "cargo": "Analista de Dados",
+                "inicio": "2019-01",
+                "fim": "2021-01",
+                "descricao": "Análise exploratória de dados e criação de dashboards."
+            }
+        ],
+        "formacao": [
+            {
+                "curso": "Engenharia da Computação",
+                "instituicao": "UnB",
+                "ano": 2019
+            }
+        ],
+        "projetos": [
+            {
+                "titulo": "Pipeline de Dados em Tempo Real",
+                "link": "https://github.com",
+                "descricao": "Sistema de streaming usando Spark Streaming + Kafka."
+            }
+        ],
+        "certificacoes": [
+            "AWS Data Analytics",
+            "Google Professional Data Engineer"
+        ],
+        "idiomas": [
+            {
+                "idioma": "Inglês",
+                "nivel": "Avançado"
+            }
+        ],
+        "areaInteresses": [
+            "Data Lake",
+            "Streaming",
+            "Machine Learning Ops"
+        ]
+    },
+    {
+        "id": 66,
+        "nome": "Luiza Martins",
+        "foto": "https://randomuser.me/api/portraits/women/66.jpg",
+        "cargo": "Desenvolvedora Mobile",
+        "resumo": "Cria aplicativos performáticos com foco em experiência fluida.",
+        "localizacao": "Fortaleza/CE",
+        "area": "Desenvolvimento",
+        "habilidadesTecnicas": [
+            "React Native",
+            "TypeScript",
+            "Expo",
+            "Firebase"
+        ],
+        "softSkills": [
+            "Criatividade",
+            "Colaboração"
+        ],
+        "experiencias": [
+            {
+                "empresa": "MobSolutions",
+                "cargo": "React Native Developer",
+                "inicio": "2020-03",
+                "fim": "2025-11",
+                "descricao": "Desenvolvimento de apps híbridos e integração com APIs REST."
+            }
+        ],
+        "formacao": [
+            {
+                "curso": "Análise e Desenvolvimento de Sistemas",
+                "instituicao": "Estácio",
+                "ano": 2020
+            }
+        ],
+        "projetos": [
+            {
+                "titulo": "App de controle financeiro",
+                "link": "https://github.com",
+                "descricao": "Aplicativo mobile com autenticação e gráficos."
+            },
+            {
+                "titulo": "Aplicativo de Saúde",
+                "link": "https://github.com",
+                "descricao": "App com monitoramento de hábitos e notificações."
+            }
+        ],
+        "certificacoes": [],
+        "idiomas": [
+            {
+                "idioma": "Inglês",
+                "nivel": "Intermediário"
+            }
+        ],
+        "areaInteresses": [
+            "Mobile",
+            "UI",
+            "Aplicativos híbridos"
         ]
     }
 ]
