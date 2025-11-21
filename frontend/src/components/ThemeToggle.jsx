@@ -9,5 +9,5 @@ export default function ThemeToggle({ theme, toggleTheme, label = false }) {
             {theme === "dark" ? <Sun size={20} /> : <MoonStar size={20} />}
             {label && <span className="font-medium">Alternar Tema</span>}
         </button>
-    );
+    )
 }

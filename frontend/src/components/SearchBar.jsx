@@ -61,7 +61,7 @@ export default function SearchBar() {
                         onKeyDown={handleKeyDown}
                         onFocus={() => search.trim() && setShowSuggestions(true)}
                         onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
-                        className="pr-4 py-2 w-64 border-b border-gray-300 outline-none transition-all duration-300 focus:border-[#f83f32]"
+                        className="pr-4 py-2 w-64 border-b border-gray-300 outline-none transition-all duration-300 focus:border-[#f83f32] dark:text-gray-100 dark:border-gray-600"
                     />
                 </div>
                 {showSuggestions && search.trim() && (
@@ -78,11 +78,6 @@ export default function SearchBar() {
                         </div>
                     </div>
                 )}
-                <input
-                    type="text"
-                    placeholder="Buscar..."
-                    className="pr-4 py-2 w-64 border-b border-gray-300 outline-none transition-all duration-300 focus:border-[#f83f32] dark:text-gray-100 dark:border-gray-600"
-                />
             </div>
             <div className="lg:hidden">
                 {isExpanded ? (

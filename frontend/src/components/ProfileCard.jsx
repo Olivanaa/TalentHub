@@ -25,7 +25,6 @@ export default function ProfileCard({
             <div className="h-2 bg-linear-to-r from-[#f83f32] to-[#F97316]"></div>
 
             <div className="p-6 flex-1 flex flex-col">
-                {/* HEADER */}
                 <div className="flex items-start gap-4 mb-4">
                     <div className="shrink-0">
                         <img
@@ -57,10 +56,7 @@ export default function ProfileCard({
                     </div>
                 </div>
 
-                {/* SKILLS */}
                 <div className="mt-auto space-y-3">
-
-                    {/* HABILIDADES TÉCNICAS */}
                     {habilidadesTecnicas?.length > 0 && (
                         <div className="space-y-2">
                             <p className="text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wide">
@@ -101,8 +97,6 @@ export default function ProfileCard({
                             </div>
                         </div>
                     )}
-
-                    {/* SOFT SKILLS */}
                     {softSkills?.length > 0 && (
                         <div className="space-y-2">
                             <p className="text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wide">
@@ -147,5 +141,5 @@ export default function ProfileCard({
                 </div>
             </div>
         </div>
-    );
+    )
 }

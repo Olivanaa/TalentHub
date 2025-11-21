@@ -1,32 +1,32 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function Login() {
-    const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
+    const [email, setEmail] = useState("")
+    const [senha, setSenha] = useState("")
 
-    const API_URL = import.meta.env.VITE_API_URL;
-    const navigate = useNavigate();
+    const API_URL = import.meta.env.VITE_API_URL
+    const navigate = useNavigate()
 
     const handleLogin = async (e) => {
-        e.preventDefault();
+        e.preventDefault()
         try {
             const response = await fetch(`${API_URL}/login`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, senha }),
-            });
+            })
 
-            const data = await response.json();
+            const data = await response.json()
 
-            localStorage.setItem("token", data.token);
-            localStorage.setItem("user", JSON.stringify(data.user));
+            localStorage.setItem("token", data.token)
+            localStorage.setItem("user", JSON.stringify(data.user))
 
-            navigate("/profiles");
+            navigate("/profiles")
         } catch (err) {
-            console.error("Erro ao fazer login:", err);
+            console.error("Erro ao fazer login:", err)
         }
-    };
+    }
 
     return (
         <section
@@ -129,5 +129,5 @@ export default function Login() {
                 </form>
             </div>
         </section>
-    );
+    )
 }
