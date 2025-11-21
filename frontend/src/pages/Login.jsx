@@ -31,13 +31,33 @@ export default function Login() {
 
             const data = await response.json()
 
+            if (!response.ok) {
+                throw new Error(data.message || `Erro ${response.status}`)
+            }
+
+            if (!data.token || !data.user) {
+                throw new Error('Resposta inválida do servidor')
+            }
+
             localStorage.setItem("token", data.token)
             localStorage.setItem("user", JSON.stringify(data.user))
 
             navigate("/profiles")
         } catch (err) {
-            console.error("Erro ao fazer login:", err)
-            setLoginError("Erro ao tentar logar. Tente novamente mais tarde.")
+            if (err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
+                console.error("Erro de conexão com o servidor");
+                setLoginError("Erro ao tentar logar. Tente novamente.");
+            } else if (err.message.includes('401') || err.message.includes('Credenciais inválidas')) {
+                setLoginError("E-mail ou senha incorretos.");
+            } else if (err.message.includes('404')) {
+                console.error("Endpoint não encontrado:", `${API_URL}/login`);
+                setLoginError("Erro ao tentar logar. Tente novamente.");
+            } else if (err.message.includes('500')) {
+                setLoginError("Erro interno do servidor. Tente novamente mais tarde.");
+            } else {
+                console.error("Erro desconhecido no login:", err.message);
+                setLoginError("Erro ao tentar logar. Tente novamente.");
+            }
         } finally {
             setIsLoading(false)
         }
@@ -139,8 +159,8 @@ export default function Login() {
                         className={` w-full bg-[#F97316] dark:bg-[#fb634f]
                             text-white font-semibold text-lg 
                             px-6 py-3 rounded-lg transform transition shadow-md 
-                            ${isLoading ? 
-                                "opacity-70 cursor-not-allowed" : 
+                            ${isLoading ?
+                                "opacity-70 cursor-not-allowed" :
                                 "hover:bg-[#FB923C] dark:hover:bg-[#ff7a69] cursor-pointer transition-all duration-300 hover:scale-[1.02]"
                             }`}
 
