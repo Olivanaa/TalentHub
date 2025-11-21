@@ -112,8 +112,8 @@ npm run dev
 ### 🔗 Aplicação em produção:
 
 
-- Frontend: 
-- Backend: 
+- Frontend: https://talent-hub-mu.vercel.app
+- Backend: https://talenthub-backend-sa9p.onrender.com/
 
 ---
 
