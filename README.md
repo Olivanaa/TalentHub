@@ -13,7 +13,18 @@ O projeto está dividido em duas partes principais:
 - **Backend:** Lógica da aplicação e gerenciamento de dados  
 
 ---
+## 🎯 Funcionalidades Principais
 
+- Busca inteligente por nome, cargo, habilidades, tecnologias, etc
+- Filtros avançados por área de atuação, cidade e tecnologias
+- Ordenação dos perfis por ID, A-Z ou Z-A
+- Perfis Profissionais Detalhados, com informações completas de experiência profissional, habilidades técnicas e soft skills, formação acadêmica e certificações, projetos realizados e portfólio, idiomas e áreas de interesse
+- Design dark/light mode
+- Interface totalmente responsiva
+- Modais interativos para visualização de perfis
+- Login seguro com JWT
+
+---
 ## 👤 Usuários e Senhas
 
 Caso existam usuários de teste cadastrados na aplicação, eles podem ser utilizados para demonstração:
@@ -28,22 +39,81 @@ Caso existam usuários de teste cadastrados na aplicação, eles podem ser utili
 - **Email:** jose.ferreira@example.com  
 - **Senha:** abc123 
 
-> ⚠️ Caso ainda não tenha contas cadastradas, é possível realizar o **cadastro pela própria aplicação** na tela inicial.
+### ✅ Usuário 3
+- **Nome:** Carla Mendes Rocha  
+- **Email:** carla.rocha@example.com
+- **Senha:** senha789
 
 ---
 
 ## 🛠️ Instalação do Projeto (Passo a Passo)
 
-```bash
+Pré-requisitos
+- Node.js (versão 16 ou superior)
+- npm ou yarn
 
+### 🔹 1. Clonar o repositório
+
+```bash
+git clone https://github.com/Olivanaa/TalentHub.git
+cd TalentHub
+```
+### 🔹 2. Configuração do Backend
+
+```bash
+cd backend
+npm install
 
 ```
+Crie um arquivo .env na pasta backend:
+
+```bash
+SECRET_KEY=sua_chave_secreta_jwt
+PORT=5000
+
+```
+
+### 🔹 3. Configuração do Frontend
+
+```bash
+cd ../frontend
+npm install
+```
+Crie um arquivo .env na pasta frontend:
+```bash
+VITE_API_URL=http://localhost:5000
+
+```
+
+### 🔹 4. Executar a aplicação
+
+Terminal 1 - Backend:
+
+```bash
+cd backend
+npm start
+```
+Terminal 2 - Frontend:
+```bash
+cd frontend
+npm run dev
+
+```
+
+### 🔹 4. Executar a aplicação
+
+- Frontend: http://localhost:5173
+- Backend: http://localhost:5000
+
+---
+
 ### 🌍 Link do Deploy
 
 ### 🔗 Aplicação em produção:
 
 
-link aq
+- Frontend: 
+- Backend: 
 
 ---
 

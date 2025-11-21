@@ -19,6 +19,14 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/', (req, res) => {
+    res.json({ 
+        message: 'TalentHub API está rodando!',
+        timestamp: new Date().toISOString(),
+        version: '1.0.0'
+    });
+});
+
 app.get("/usuarios", (req, res) => {
   res.json(usuarios);
 });
@@ -29,12 +37,10 @@ app.get("/profissionais", (req, res) => {
 
 app.post('/login', (req, res) => {
     const { email, senha } = req.body;
-    console.log(email, senha);
-    
+    console.log(email, senha);    
 
     const user = usuarios.find(u => u.email === email && u.senha === senha);
-    console.log(user);
-    
+    console.log(user);    
 
     if (!user) {
         console.log('Credenciais inválidas.');
@@ -53,6 +59,13 @@ app.post('/login', (req, res) => {
         user
     });
 
+});
+
+app.use((req, res, next) => {
+    res.status(404).json({ 
+        message: 'Rota não encontrada',
+        path: req.originalUrl
+    });
 });
 
 app.listen(PORT, () => {
