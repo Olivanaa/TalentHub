@@ -1,31 +1,28 @@
-import ExperienceCard from "./ExperienceCard";
-import LanguageCard from "./LanguageCard";
-import ProjectCard from "./ProjectCard";
-import TrainingCard from "./TrainingCard";
-import { MessageModal } from "./MessageModal";
-import { X, MapPin, Briefcase, Award, Globe, BookOpen } from "lucide-react";
-import { useState } from "react";
+import ExperienceCard from "./ExperienceCard"
+import LanguageCard from "./LanguageCard"
+import ProjectCard from "./ProjectCard"
+import TrainingCard from "./TrainingCard"
+import { MessageModal } from "./MessageModal"
+import { X, MapPin, Briefcase, Award, Globe, BookOpen } from "lucide-react"
+import { useState } from "react"
 
 export default function ProfileModal({
-    showCloseButton = true,
-    isOpen = { isModalOpen },
-    profile = { selectedProfile },
-    onClose = { handleCloseModal }
     profile,
     onClose = () => {},
     isOpen = false,
     showCloseButton = true
 }) {
-    const [showMessageModal, setShowMessageModal] = useState(false);
-    if (!profile || !isOpen) return null;
+    const [showMessageModal, setShowMessageModal] = useState(false)
+    
+    if (!profile || !isOpen) return null
 
     const handleRecommend = () => {
-        alert(`Você recomendou ${profile.nome}!`);
-    };
+        alert(`Você recomendou ${profile.nome}!`)
+    }
 
     const handleMessage = () => {
-        setShowMessageModal(true);
-    };
+        setShowMessageModal(true)
+    }
 
     return (
         <>
@@ -36,7 +33,7 @@ export default function ProfileModal({
                     onClick={(e) => e.stopPropagation()}
                 >
                     <div className="relative">
-                        <div className="h-32 bg-linear-to-r from-[#f83f32] to-[#F97316] relative">
+                        <div className="h-32 bg-gradient-to-r from-[#f83f32] to-[#F97316] relative">
                             <div className="absolute -bottom-12 left-8">
                                 <img
                                     src={profile.foto}
@@ -60,8 +57,6 @@ export default function ProfileModal({
                     </div>
 
                     <div className="pt-16 pb-8 px-8 max-h-[calc(90vh-180px)] overflow-y-auto">
-
-                        {/* Nome + Título + Localização */}
                         <div className="mb-8">
                             <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
                                 {profile.nome}
@@ -93,14 +88,8 @@ export default function ProfileModal({
                                 </p>
                             )}
                         </div>
-
-                        {/* GRID */}
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                            {/* LEFT */}
                             <div className="space-y-6">
-
-                                {/* HABILIDADES TÉCNICAS */}
                                 {profile.habilidadesTecnicas?.length > 0 && (
                                     <div>
                                         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2">
@@ -123,8 +112,6 @@ export default function ProfileModal({
                                         </div>
                                     </div>
                                 )}
-
-                                {/* SOFT SKILLS */}
                                 {profile.softSkills?.length > 0 && (
                                     <div>
                                         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2">
@@ -147,13 +134,9 @@ export default function ProfileModal({
                                         </div>
                                     </div>
                                 )}
-
-                                {/* IDIOMAS */}
                                 {profile.idiomas?.length > 0 && (
                                     <LanguageCard languages={profile.idiomas} />
                                 )}
-
-                                {/* CERTIFICAÇÕES */}
                                 {profile.certificacoes?.length > 0 && (
                                     <div>
                                         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2">
@@ -165,7 +148,7 @@ export default function ProfileModal({
                                             {profile.certificacoes.map((cert, index) => (
                                                 <div
                                                     key={index}
-                                                    className="bg-linear-to-r from-[#f83f32] to-[#F97316] 
+                                                    className="bg-gradient-to-r from-[#f83f32] to-[#F97316] 
                                                     rounded-xl p-4 text-white shadow-lg hover:shadow-xl 
                                                     transition-all duration-300 transform hover:scale-105"
                                                 >
@@ -179,8 +162,6 @@ export default function ProfileModal({
                                     </div>
                                 )}
                             </div>
-
-                            {/* RIGHT */}
                             <div className="space-y-6">
                                 {profile.experiencias?.length > 0 && (
                                     <ExperienceCard experiences={profile.experiencias} />
@@ -204,7 +185,7 @@ export default function ProfileModal({
                                         <div className="space-y-2">
                                             {profile.areaInteresses.map((area, index) => (
                                                 <div key={index} className="flex items-center gap-3">
-                                                    <div className="w-2 h-2 bg-linear-to-r from-[#f83f32] to-[#F97316] rounded-full"></div>
+                                                    <div className="w-2 h-2 bg-gradient-to-r from-[#f83f32] to-[#F97316] rounded-full"></div>
                                                     <span className="text-gray-700 dark:text-gray-300">{area}</span>
                                                 </div>
                                             ))}
@@ -213,8 +194,6 @@ export default function ProfileModal({
                                 )}
                             </div>
                         </div>
-
-                        {/* BUTTONS */}
                         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                             <button
                                 onClick={handleRecommend}
@@ -235,6 +214,7 @@ export default function ProfileModal({
                     </div>
                 </div>
             </div>
+            
             {showMessageModal && (
                 <MessageModal 
                     profile={profile}
@@ -243,5 +223,5 @@ export default function ProfileModal({
                 />
             )}
         </>
-    );
+    )
 }

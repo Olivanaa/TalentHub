@@ -1,12 +1,12 @@
 import { useNavigate, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import ProfileCard from "../components/ProfileCard"
-import { Search, Users, Filter, ArrowLeft } from "lucide-react"
+import { Search, Users, ArrowLeft } from "lucide-react"
 import ProfileModal from "../components/ProfileModal"
 
 export default function SearchPage() {
   const { searchProfile } = useParams()
-  const navigate = useNavigate() 
+  const navigate = useNavigate()
 
   const [profiles, setProfiles] = useState([])
   const [filteredProfiles, setFilteredProfiles] = useState([])
@@ -95,7 +95,7 @@ export default function SearchPage() {
   }
 
   const handleGoBack = () => {
-    navigate(-1) 
+    navigate(-1)
   }
 
   useEffect(() => {
@@ -105,23 +105,23 @@ export default function SearchPage() {
 
   if (loading) {
     return (
-      <main className="min-h-screen bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center">
+      <main className="min-h-screen bg-gradient-to-br from-gray-200 to-gray-100 dark:from-[#0d0d0d] dark:to-[#1a1a1a] flex items-center justify-center transition-colors">
         <div className="flex flex-col items-center gap-4">
           <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-[#f83f32]"></div>
-          <span className="text-gray-500 text-xl font-light">Buscando...</span>
+          <span className="text-gray-500 dark:text-gray-300 text-xl font-light">Buscando...</span>
         </div>
       </main>
     )
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-200 to-gray-100">
-      <div className="bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <main className="min-h-screen bg-gradient-to-br from-gray-200 to-gray-100 dark:from-[#0f0f0f] dark:to-[#1c1c1c] transition-colors duration-300">
+      <div className="bg-white/80 dark:bg-white/5 backdrop-blur-md border-b border-gray-200 dark:border-white/10 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex justify-between items-center mb-6">
             <button
               onClick={handleGoBack}
-              className="flex items-center gap-2 text-gray-600 hover:text-[#f83f32] transition-colors duration-300 font-medium"
+              className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-[#f83f32] dark:hover:text-[#ff5e50] transition-colors duration-300 font-medium"
             >
               <ArrowLeft size={20} />
               Voltar
@@ -129,20 +129,20 @@ export default function SearchPage() {
           </div>
           <div className="text-center space-y-4">
             <div className="flex justify-center items-center gap-3">
-              <Search className="text-[#f83f32]" size={32} />
-              <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">
+              <Search className="text-[#f83f32] dark:text-[#ff5e50]" size={32} />
+              <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100">
                 Resultados da Busca
               </h1>
             </div>
 
             {searchProfile && (
-              <p className="text-lg text-gray-600">
-                Resultados para: <span className="text-[#f83f32] font-semibold">"{decodeURIComponent(searchProfile)}"</span>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Resultados para: <span className="text-[#f83f32] dark:text-[#ff5e50] font-semibold">"{decodeURIComponent(searchProfile)}"</span>
               </p>
             )}
           </div>
           <div className="mt-6 text-center">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               {filteredProfiles.length} {filteredProfiles.length === 1 ? 'perfil encontrado' : 'perfis encontrados'}
             </p>
           </div>
@@ -151,11 +151,11 @@ export default function SearchPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {error ? (
           <div className="text-center py-16">
-            <div className="bg-red-50 border border-red-200 rounded-xl p-6 max-w-md mx-auto">
-              <p className="text-red-700">{error}</p>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800/40 rounded-xl p-6 max-w-md mx-auto">
+              <p className="text-red-700 dark:text-red-300">{error}</p>
               <button
                 onClick={fetchProfiles}
-                className="mt-4 bg-[#f83f32] text-white px-6 py-2 rounded-lg hover:bg-[#e6352a] transition-colors"
+                className="mt-4 bg-[#f83f32] dark:bg-[#ff5e50] text-white px-6 py-2 rounded-lg hover:bg-[#e6352a] dark:hover:bg-[#ff4a3a] transition-colors"
               >
                 Tentar Novamente
               </button>
@@ -173,11 +173,11 @@ export default function SearchPage() {
           </div>
         ) : (
           <div className="text-center py-16">
-            <Users className="mx-auto text-gray-300 mb-4" size={64} />
-            <h3 className="text-xl font-semibold text-gray-500 mb-2">
+            <Users className="mx-auto text-gray-300 dark:text-gray-600 mb-4" size={64} />
+            <h3 className="text-xl font-semibold text-gray-500 dark:text-gray-300 mb-2">
               Nenhum resultado encontrado
             </h3>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 dark:text-gray-500 mb-6">
               Não encontramos perfis correspondentes à sua busca
             </p>
           </div>

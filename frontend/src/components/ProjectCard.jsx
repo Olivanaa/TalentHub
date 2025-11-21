@@ -46,5 +46,5 @@ export default function ProjectCard({ projects }) {
                 ))}
             </div>
         </section>
-    );
+    )
 }
