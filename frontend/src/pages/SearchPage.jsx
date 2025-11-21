@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import ProfileCard from "../components/ProfileCard"
 import { Search, Users, ArrowLeft } from "lucide-react"
 import ProfileModal from "../components/ProfileModal"
+import Erro from "./Erro"
 
 export default function SearchPage() {
   const { searchProfile } = useParams()
@@ -113,6 +114,9 @@ export default function SearchPage() {
       </main>
     )
   }
+
+   if (error)
+          return <Erro onRetry={fetchProfiles} />
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-200 to-gray-100 dark:from-[#0f0f0f] dark:to-[#1c1c1c] transition-colors duration-300">
