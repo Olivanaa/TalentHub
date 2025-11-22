@@ -2,7 +2,7 @@ import { Search } from "lucide-react"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
-export default function SearchBar() {
+export default function SearchBar({ onSearch }) {
 
     const navigate = useNavigate()
 
@@ -27,6 +27,7 @@ export default function SearchBar() {
             setSearch('')
             setShowSuggestions(false)
             setIsExpanded(false)
+            if (onSearch) onSearch()
         }
     }
 
@@ -36,6 +37,7 @@ export default function SearchBar() {
             setSearch('')
             setShowSuggestions(false)
             setIsExpanded(false)
+            if (onSearch) onSearch()
         }
     }
 
@@ -45,6 +47,7 @@ export default function SearchBar() {
             setSearch('')
             setShowSuggestions(false)
             setIsExpanded(false)
+            if (onSearch) onSearch()
         }
     }
 
@@ -90,7 +93,7 @@ export default function SearchBar() {
                             onKeyDown={handleKeyDown}
                             onBlur={() => setTimeout(() => setIsExpanded(false), 300)}
                             autoFocus
-                            className="pl-10 pr-20 py-2 w-full bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f83f32]/20 focus:border-[#f83f32] outline-none transition-all duration-300"
+                            className="pl-10 pr-20 py-2 w-full bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f83f32]/20 focus:border-[#f83f32] dark:bg-gray-600 dark:border-gray-600 dark:text-gray-300 outline-none transition-all duration-300"
                         />
                         <Search size={18} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                         {search.trim() && (

@@ -14,23 +14,13 @@ export default function NavbarMobile({
 }) {
     return (
         <>
-            <div className="lg:hidden flex items-center space-x-4">
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="text-gray-600 dark:text-gray-300 hover:text-[#f83f32] dark:hover:text-[#fb634f] p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                >
-                    {isOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
-            </div>
-
             {isOpen && (
-                <div className="lg:hidden border-t border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg transition-colors duration-300">
+                <div className="lg:hidden border-t border-gray-200 dark:border-gray-600 bg-white/95 dark:bg-[#3E4451]/95 backdrop-blur-lg transition-colors duration-300">
                     <div className="py-4 space-y-4">
 
                         {usuario && (
-                            <div className="px-4 pb-4 border-b border-gray-200 dark:border-gray-700 flex items-center gap-3">
-                                <Search size={20} className="text-gray-600 dark:text-gray-300" />
-                                <SearchBar />
+                            <div className="px-4 pb-4 border-b border-gray-200 dark:border-gray-600">
+                                <SearchBar onSearch={() => setIsOpen(false)} />
                             </div>
                         )}
 
@@ -62,7 +52,7 @@ export default function NavbarMobile({
                             )}
                         </div>
 
-                        <div className="pt-4 border-t border-gray-200 dark:border-gray-700 space-y-3">
+                        <div className="pt-4 border-t border-gray-200 dark:border-gray-600 space-y-3">
                             {usuario ? (
                                 <button
                                     onClick={handleLogout}
@@ -81,7 +71,7 @@ export default function NavbarMobile({
                             )}
                         </div>
 
-                        <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <div className="pt-4 border-t border-gray-200 dark:border-gray-600">
                             <ThemeToggle theme={theme} toggleTheme={toggleTheme} label />
                         </div>
                     </div>
